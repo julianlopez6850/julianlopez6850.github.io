@@ -1,0 +1,15 @@
+.footer {
+    min-width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer .content{
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    color: var(--primary);
+}

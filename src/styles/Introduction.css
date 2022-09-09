@@ -1,0 +1,82 @@
+.introduction {
+    height: calc(100vh);
+    width: 100%;
+    background-color: var(--dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduction .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.introduction .intro {
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  margin: 16px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  animation: pop-in 0.5s;
+}
+
+.introduction .intro .message {
+  margin: 40px;
+  color: var(--primary);
+  font-size: 24px;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.introduction .intro .message .header {
+  font-size: 64px;
+  color: var(--primary-hover);
+}
+
+.introduction .technologies .icons{
+
+}
+
+.introduction .technologies .names{
+
+}
+
+.introduction button {
+  width: 400px;
+  padding: 20px;
+  font-size: 1em;
+  border-radius: 20px;
+  background-color: var(--primary-hover);
+  color: var(--background-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: var(--background-color);
+  border-style: solid;
+  transition: 0.2s;
+} 
+
+.introduction button:hover {
+  border: white;
+  border-style: solid;
+}
+
+.introduction button:active {
+  background-color: var(--background-color);
+  color: var(--dark);
+  border: white;
+  border-style: solid;
+}

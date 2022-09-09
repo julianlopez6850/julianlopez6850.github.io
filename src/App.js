@@ -1,25 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+//import './styles/Footer.css';
+
+import Navbar from './components/Navbar.js';
+import Introduction from './components/Introduction.js';
+import About from './components/About.js';
+import Contact from './components/Contact.js';
+import Footer from './components/Footer.js';
+import Projects from './components/Projects.js';
+
+import Homepage from './pages/Homepage.js';
+import NuMom from './pages/NuMom.js';
+
+
+import {BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="App">
+			
+			<Router>
+				<Navbar />
+				
+				<Routes>
+					<Route exact path="/" element={Homepage} />
+					<Route exact path="/projects" element={Homepage} />
+					<Route exact path="/projects/NuMom" element={NuMom} />
+				</Routes>
+
+				<Contact/>
+				<Footer/>
+			</Router>
+		</div>
+	);
 }
 
-export default App;
+export default App

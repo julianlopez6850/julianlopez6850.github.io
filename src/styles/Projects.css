@@ -1,0 +1,194 @@
+.projects {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.projects .header {
+    font-size: 56px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.projects .header strong {
+    color: var(--primary-hover);
+}
+
+.project-card {
+    width: 1100px;
+    height: 300px;
+    margin-bottom: 50px;
+}
+
+.project-card .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.project-card .content .left {
+    height: 300px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+.project-card .content .left img {
+    height: 300px;
+    max-width: 534px;
+    color: white;
+    border-radius: 25px;
+    border: 3px white solid;
+    background-color: var(--background-color);
+}
+
+.project-card .content .right {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    border-radius: 25px;
+    border: 3px white solid;
+    background-color: var(--background-color);
+}
+
+.project-card .content .right .title {
+    margin-top: 10px;
+    font-size: 32px;
+    color: white;
+}
+
+.project-card .content .right .description {
+    padding: 0px 10px 0px 20px;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.project-card .content .right .tech-icons {
+    margin: 0px 20px 0px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.project-card .content .right .tech-icons img {
+    height: 50px;
+    width: 50px;
+}
+
+.project-card .content .right .tech-names {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.project-card .content .right .tech-names .names {
+    font-size: 12px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+.project-card .content .right .learn-more {
+    margin-bottom: 15px;
+}
+
+/* button is from uiverse.io and has been tweaked */
+
+.projects button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    width: 12rem;
+    height: auto;
+    z-index: 0;
+}
+   
+.projects button .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: white;
+    border-radius: 1.625rem;
+}
+   
+.projects button .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: var(--background-color);
+}
+   
+.projects button .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+   
+.projects button .circle .icon.arrow::before {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid var(--background-color);
+    border-right: 0.125rem solid var(--background-color);
+    transform: rotate(45deg);
+}
+   
+.projects button .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.6375rem 0rem 0rem 1.75rem;
+    margin: 1 0 0 1.85rem;
+    color: white;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 3rem;
+    border-width: 2px;
+    border-style:solid;
+    border-color: white;
+}
+   
+.projects button:hover .circle {
+    width: 100%;
+}
+   
+.projects button:hover .circle .icon.arrow {
+    background: var(--background-color);
+    transform: translate(1rem, 0);
+}
+   
+.projects button:hover .button-text {
+    color: var(--background-color);
+}

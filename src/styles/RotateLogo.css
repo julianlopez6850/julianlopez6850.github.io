@@ -1,0 +1,22 @@
+.rotate_img{
+    position: flex;
+    padding: 10px;
+    width: 36px;
+    height: 36px;
+
+    /* -webkit-animation: spin 24s linear infinite;
+    -moz-animation: spin 24s linear infinite;
+    animation: spin 24s linear infinite; */
+}
+
+@-webkit-keyframes spin{
+    100%{-webkit-transform: rotate(360deg);}
+}
+
+@-moz-keyframes spin{
+    100%{-webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin{
+    100%{-webkit-transform: rotate(360deg);}
+}
