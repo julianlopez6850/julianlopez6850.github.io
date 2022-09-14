@@ -19,7 +19,6 @@ import UnityLogo from "../assets/tech_logos/Unity.svg";
 import JavaLogo from "../assets/tech_logos/Java.svg";
 import CLogo from "../assets/tech_logos/C.svg";
 
-
 function Projects() {
     return (
         <div className="projects">
@@ -28,7 +27,7 @@ function Projects() {
             </div>
             <Project
                 title="NuMom"
-                desc="A mobile application aimed to provide access to resources and information regarding sexual health, health care, and mothering infants."
+                desc="A mobile application aimed to provide access to resources and information to low-income woman regarding sexual health, general health care, and proper infant care."
                 image={NuMom}
                 techIcons={[JavaScriptLogo, ReactLogo, FirebaseLogo, GitLogo]}
                 tech={["JavaScript", "React Native", "Firebase", "Git"]}
@@ -40,7 +39,7 @@ function Projects() {
                 image={AliensTookMyFriend}
                 techIcons={[UnityLogo, CSharpLogo]}
                 tech={["Unity", "C#",]}
-                link=""
+                link="/projects/AliensTookMyFriend"
             />
             <Project
                 title="This Website"
@@ -48,7 +47,7 @@ function Projects() {
                 image={ThisWebsite}
                 techIcons={[JavaScriptLogo, ReactLogo, CSSLogo, HTMLLogo]}
                 tech={["JavaScript", "ReactJS", "CSS", "HTML"]}
-                link=""
+                link="/projects/ThisWebsite"
             />
         </div>
     )

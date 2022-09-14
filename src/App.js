@@ -1,16 +1,13 @@
 import './App.css';
-//import './styles/Footer.css';
 
 import Navbar from './components/Navbar.js';
-import Introduction from './components/Introduction.js';
-import About from './components/About.js';
 import Contact from './components/Contact.js';
 import Footer from './components/Footer.js';
-import Projects from './components/Projects.js';
 
 import Homepage from './pages/Homepage.js';
 import NuMom from './pages/NuMom.js';
-
+import AliensTookMyFriend from './pages/AliensTookMyFriend.js';
+import ThisWebsite from './pages/ThisWebsite.js';
 
 import {BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -24,7 +21,11 @@ function App() {
 				<Routes>
 					<Route exact path="/" element={Homepage} />
 					<Route exact path="/projects" element={Homepage} />
-					<Route exact path="/projects/NuMom" element={NuMom} />
+					<Route exact path="/projects/NuMom" element={<NuMom/>} />
+					<Route exact path="/projects/AliensTookMyFriend" element={<AliensTookMyFriend/>} />
+					<Route exact path="/projects/ThisWebsite" element={<ThisWebsite/>} />
+
+					
 				</Routes>
 
 				<Contact/>

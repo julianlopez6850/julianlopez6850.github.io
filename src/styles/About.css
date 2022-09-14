@@ -34,7 +34,7 @@
     border: 5px solid white;
 }
 .about .content .left img {
-
+    border-radius: 200px;
 }
 
 .about .content .left .social {

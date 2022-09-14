@@ -1,3 +1,81 @@
 .projectPage {
-    
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.projectPage .header {
+    font-size: 56px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.projectPage .header strong {
+    color: var(--primary-hover)
+}
+
+.projectPage .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectPage .content .screenshot img {
+    height: 250px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 2px solid white;
+}
+
+.projectPage .content .description {
+    width: 50%;
+    font-size: 18px;
+}
+
+.projectPage .content .description strong {
+    color: var(--primary-hover);
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.projectPage .content .description i {
+    color: var(--primary-hover);
+}
+
+.projectPage .content .technologies {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projectPage .content .tech-icons {
+    margin: 0px 20px 2px 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.projectPage .content .tech-icons img {
+    height: 50px;
+    width: 50px;
+}
+
+.projectPage .content .tech-names {
+    display: flex;
+    flex-direction: row;
+}
+
+.projectPage .content .tech-names .names {
+    font-size: 12px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
 }

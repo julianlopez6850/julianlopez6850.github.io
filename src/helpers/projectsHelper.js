@@ -35,7 +35,7 @@ function Project(props) {
                                 );
                             })}
                     </div>
-                    <Link to={props.link}>
+                    <Link to={props.link} state={{props}}>
                         <div className="learn-more">
                             <button>
                                 <span class="circle" aria-hidden="true">
