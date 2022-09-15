@@ -17,7 +17,7 @@ function getAge(dateString) {
 
 function About() {
     return (
-        <div className = "about">
+        <div className = "about" id="about">
             <div className = "header">
                 About <strong>Me</strong>
             </div>

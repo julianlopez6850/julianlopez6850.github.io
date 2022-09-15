@@ -21,7 +21,7 @@ import CLogo from "../assets/tech_logos/C.svg";
 
 function Projects() {
     return (
-        <div className="projects">
+        <div className="projects" id="projects">
             <div className="header">
             <strong>My</strong> Projects
             </div>

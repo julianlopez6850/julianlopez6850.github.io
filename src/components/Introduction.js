@@ -7,7 +7,7 @@ import '../styles/Introduction.css';
 function Introduction() {
 
     return (
-        <div className="introduction">
+        <div className="introduction" id="home">
             <div className="content">
                 <div className="intro">
                     <div className="message">
