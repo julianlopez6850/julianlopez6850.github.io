@@ -1,6 +1,6 @@
 import '../styles/ProjectPage.css'
 import { useLocation } from 'react-router-dom';
-import ScrollTo from '../helpers/scrollToTop.js';
+import ScrollToTop from '../helpers/scrollToTop.js';
 
 function ThisWebsite() {
 	const location = useLocation();
@@ -8,7 +8,7 @@ function ThisWebsite() {
 
 	return (
 		<div className="projectPage">
-			<ScrollTo/>
+			<ScrollToTop/>
             <div className="header">
 				<strong>{props.title}</strong>
 			</div>

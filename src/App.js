@@ -19,14 +19,7 @@ function App() {
 				<Navbar />
 				
 				<Routes>
-					<Route exact path="/" element={<Homepage/>} />
-
-					{/*
-					<Route exact path="/about" element={<Homepage to={window.innerHeight - 55}/>} />
-					<Route exact path="/projects" element={<Homepage to={window.innerHeight + 420}/>} />
-					<Route exact path="/contact" element={<Homepage to={window.innerHeight + 1585}/>} />
-					*/}
-
+					<Route exact path="/" element={Homepage} />
 					<Route exact path="/projects/NuMom" element={<NuMom/>} />
 					<Route exact path="/projects/AliensTookMyFriend" element={<AliensTookMyFriend/>} />
 					<Route exact path="/projects/ThisWebsite" element={<ThisWebsite/>} />
