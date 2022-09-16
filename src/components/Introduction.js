@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import MenuIcon from "@material-ui/icons/Reorder";
+import { HashLink } from 'react-router-hash-link';
 
 import '../styles/Introduction.css';
+
+import { scrollWithOffset } from "../helpers/scrollWithOffset.js";
 
 function Introduction() {
 
@@ -15,11 +16,9 @@ function Introduction() {
                         <div className="header"><strong>Julian Lopez</strong></div>
                         <div>a software developer from Miami, FL</div>
                     </div>
-                    <button>
-                        <div className="button">
-                            Take a deep dive into my work!
-                        </div>
-                    </button>
+                    <HashLink smooth to="/#projects" scroll={el => scrollWithOffset(el)}> 
+                        Take a deep dive into my work! 
+                    </HashLink>
                 </div>
             </div>
         </div>
