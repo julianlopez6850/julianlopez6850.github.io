@@ -41,13 +41,13 @@
 
 .projectPage .content .description strong {
     color: var(--primary-hover);
+}
+
+.projectPage .content .description strong u {
+    color: var(--primary-hover);
     display: inline-block;
     width: 100%;
     text-align: center;
-}
-
-.projectPage .content .description i {
-    color: var(--primary-hover);
 }
 
 .projectPage .content .technologies {
@@ -78,4 +78,60 @@
     width: 90px;
     display: flex;
     justify-content: center;
+}
+
+.projectPage .content a {
+    color: white;
+}
+
+.projectPage .content .additionalLinks  {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 
+
+.projectPage .content .additionalLinks  button {
+    width: 360px;
+    padding: 20px;
+    font-size: 1em;
+    border-radius: 20px;
+    background-color: var(--primary-hover);
+    color: var(--background-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: var(--background-color);
+    border-style: solid;
+    transition: 0.2s;
+    text-decoration: none;
+    margin-bottom: 10px;
+} 
+  
+.projectPage .content .additionalLinks button:hover {
+    border: white;
+    border-style: solid;
+}
+  
+.projectPage .content .additionalLinks button:active {
+    background-color: var(--background-color);
+    color: var(--dark);
+    border: white;
+    border-style: solid;
+}
+
+.projectPage .content .additionalLinks button img {
+    height: 24px;
+    width: 24px;
+    margin-left: 8px;
+    transition: 0.2s;
+}
+
+.projectPage .content .additionalLinks button:active img {
+    filter: invert(99%) sepia(93%) saturate(7%) hue-rotate(230deg) brightness(105%) contrast(100%);
+    height: 24px;
+    width: 24px;
+    fill: white;
 }

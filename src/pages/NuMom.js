@@ -1,10 +1,15 @@
 import '../styles/ProjectPage.css'
 import { useLocation } from 'react-router-dom';
 import ScrollToTop from '../helpers/scrollToTop.js';
+import { HashLink } from 'react-router-hash-link';
+import { scrollWithOffset } from "../helpers/scrollWithOffset.js";
+import Github from '../assets/socials_logos/Github.svg';
 
 function NuMom() {
 	const location = useLocation();
 	const { props } = location.state
+
+	const GithubLink = "https://github.com/edumorlom/nuMom";
 
 	return (
 		<div className="projectPage">
@@ -42,15 +47,27 @@ function NuMom() {
 							<li>Testing the app to find areas of concern (bugs and areas where UI/UX could be improved greatly).</li>
 							<li>Developing new code & debuging existing code in order to release fixes/improvements for current user stories.</li>
 							<li>Thoroughly testing and reviewing the pull requests of my fellow teammates.</li>
-							<li>Documenting changes made to the application, and creating UML digrams throughout the development process</li>
+							<li>Documenting changes made to the application, and creating UML digrams throughout the development process.</li>
 						</ul>
-						I returned to the NuMom team during the Spring 2022 semester, now as NuMom's <u>lead developer</u> and <u>Scrum Master</u>. 
+						I returned to the NuMom team during the Spring 2022 semester, now as NuMom's <strong>lead developer</strong> and <strong>Scrum Master</strong>. 
 						During this time, I continued to hold all the responsibilities I previously held, while also:
 						<ul>
-							<li>Ensuring team attendance during meetings as well as participation and progress throughout development</li>
-							<li>Scheduling, organizing and leading scrum meetings and meeting documents</li>
-							<li>Helping development team members with their assigned user stories when needed</li>
+							<li>Ensuring team attendance during meetings as well as participation and progress throughout development.</li>
+							<li>Scheduling, organizing and leading scrum meetings and meeting documents.</li>
+							<li>Helping development team members with their assigned user stories when needed.</li>
 						</ul>
+						<strong><u>Development Process of NuMom:</u></strong>
+						{"\n\n"}
+						The application is developed in <strong>JavaScript</strong> with <strong>React Native</strong> and it uses <strong>Firebase</strong> as its backend. The team used <strong>Git</strong>{" "}
+						for version control of the application throughout the entire development process and <strong>Github</strong> to manage the repository, 
+						and post new issues & pull requests. We used Discord, Whatsapp, and Zoom throughout development for general communication and meetings.
+						{"\n\n"}
+						NuMom's development process was based around the Scrum development framework, with 2-week long development sprints. 
+						The team held daily standup meetings to organize workload and speak about the progress and hurdles of each team
+						member, and once-per-sprint planning, backlog refinement, review, and retrospective meetings, in which the team
+						met with the Product Owner to plan out sprints, discuss new user stories to be implemented, and refine old user
+						stories or any practices that may be causing issues within the team.
+						{"\n\n"}
 						<strong><u>History of NuMom:</u></strong>
 						{"\n\n"}
 						NuMom was originally created in Fall of 2019, and is in continuous development each semester by Florida International
@@ -61,39 +78,36 @@ function NuMom() {
 						Our lead mentor, who often acted as Product Owner on Jean's behalf, was Eduardo Morales, a NuMom veteran contributor,{"\n"}
 						FIU alumnus, and full-stack software engineer at IBM. NuMom is property of FIU.
 						{"\n\n"}
-						<strong><u>Development Process of NuMom:</u></strong>
-						{"\n\n"}
-						The application is developed in <u>JavaScript</u>{" "}
-						with <u>React Native</u> and it uses <u>Firebase</u> as its backend. The team used <u>Git</u> for version control of the application
-						throughout the entire development process and <u>Github</u> to manage the repository, and post new issues & pull requests. We
-						used <u>Discord</u>, <u>Whatsapp</u>, and <u>Zoom</u> throughout development for general communication and meetings.
-						{"\n\n"}
-						NuMom's development process was based around the Scrum development framework, with 2-week long development sprints. 
-						The team held daily standup meetings to organize workload and speak about the progress and hurdles of each team
-						member, and once-per-sprint planning, backlog refinement, review, and retrospective meetings, in which the team
-						met with the Product Owner to plan out sprints, discuss new user stories to be implemented, and refine old user
-						stories or any practices that may be causing issues within the team.
-						{"\n\n"}
 						<strong><u>Technologies Used:</u></strong>
 						{"\n\n"}
 					</text1>
-				</div>
-				<div className="technologies">
-					<div className="tech-icons">
-						{props.techIcons.map(techItem => {
-								return (
-									<img className="tech-icons" src={techItem} />
-								);
-							})}
+					<div className="technologies">
+						<div className="tech-icons">
+							{props.techIcons.map(techItem => {
+									return (
+										<img className="tech-icons" src={techItem} />
+									);
+								})}
+						</div>
+						<div className="tech-names">
+							{props.tech.map(techItem => {
+									return (
+										<div className="names">
+											{techItem}
+										</div>
+									);
+								})}
+						</div>
 					</div>
-					<div className="tech-names">
-						{props.tech.map(techItem => {
-								return (
-									<div className="names">
-										{techItem}
-									</div>
-								);
-							})}
+					<text1 style={{ whiteSpace: "pre-line" }}>
+						{"\n"}
+						<strong><u>Additional Links:</u></strong>
+					</text1>
+					<div className="additionalLinks">
+						<button onClick={() => {window.open(GithubLink)}}>
+							Github Repository
+							<img src={Github}/>
+						</button>
 					</div>
 				</div>
 			</div>
