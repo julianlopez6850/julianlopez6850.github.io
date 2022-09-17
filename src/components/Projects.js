@@ -7,6 +7,7 @@ import '../styles/Projects.css';
 import NuMom from "../assets/NuMom_Screenshot.png";
 import AliensTookMyFriend from "../assets/AliensTookMyFriend_Screenshot.png";
 import ThisWebsite from "../assets/ThisWebsite_Screenshot.png";
+import InstaSlot from "../assets/InstaSlot_Screenshot.png";
 
 import HTMLLogo from "../assets/tech_logos/HTML.svg";
 import CSSLogo from "../assets/tech_logos/CSS.svg";
@@ -48,6 +49,14 @@ function Projects() {
                 techIcons={[JavaScriptLogo, ReactLogo, CSSLogo, HTMLLogo]}
                 tech={["JavaScript", "ReactJS", "CSS", "HTML"]}
                 link="/projects/ThisWebsite"
+            />
+            <Project
+                title="InstaSlot"
+                desc="A slot machine simulator video game developed by a group of 4, including myself, during ShellHacks 2021 in under 36 hours, for the 'GANstant Win Challenge', sponsored by GAN."
+                image={InstaSlot}
+                techIcons={[UnityLogo, CSharpLogo]}
+                tech={["Unity", "C#",]}
+                link="/projects/InstaSlot"
             />
         </div>
     )
