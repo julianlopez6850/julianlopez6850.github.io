@@ -42,7 +42,7 @@ function AliensTookMyFriend() {
 										target="_blank"
 										rel="noopener noreferrer"
 									>
-										HERE
+										<u>HERE</u>
 									</a>
 									.
 									{"\n\n"}

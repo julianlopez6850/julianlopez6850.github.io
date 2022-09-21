@@ -29,7 +29,7 @@
     justify-content: center;
 }
 
-.footer .content button img {
+.footer .content a img {
     height: 50px;
     width: 50px;
     margin: 10px;
@@ -37,13 +37,13 @@
     border: 2px solid var(--primary);
 }
 
-.footer .content button {
+.footer .content a {
     background-color: transparent;
     border: none;
     cursor: pointer;
 }
 
-.footer .content button:hover img {
+.footer .content a:hover img {
     height: 70px;
     width: 70px;
     margin: 0px;

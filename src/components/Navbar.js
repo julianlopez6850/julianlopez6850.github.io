@@ -8,6 +8,8 @@ import { useScrollPosition } from "../helpers/useScrollPosition";
 import { scrollWithOffset } from "../helpers/scrollWithOffset.js";
 import initialsLogo from '../assets/initialsLogo.svg';
 
+const Resume = process.env.PUBLIC_URL + "Julian_Lopez_Resume.pdf"
+
 function Navbar(props) {
     const [openLinks, setOpenLinks] = useState(false)
     
@@ -29,7 +31,13 @@ function Navbar(props) {
                     <HashLink smooth to="/#about" scroll={el => scrollWithOffset(el)}> About </HashLink>
                     <HashLink smooth to="/#projects" scroll={el => scrollWithOffset(el)}> Projects </HashLink>
                     <HashLink smooth to="/#contact" scroll={el => scrollWithOffset(el)}> Contact </HashLink>
-                    <HashLink smooth to="/#resume" scroll={el => scrollWithOffset(el)}> Resume </HashLink>
+                    <a
+                        href={Resume}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Resume
+                    </a>
                 </div>
                 <button onClick={toggleLinks}>
                     <MenuIcon />

@@ -2,7 +2,6 @@ import React, { useRef } from "react";
 import "../styles/About.css";
 
 import initialsLogo from "../assets/initialsLogo.svg";
-import { Today } from "@material-ui/icons";
 
 function getAge(dateString) {
     let today = new Date();
@@ -32,7 +31,7 @@ function About() {
                     {"\n\n"}
                     I am {getAge("07/23/2001")} years old, and I am deeply interested in software design and development. {"\n"}
                     I have a passion for creating innovative solutions to the problems that surround us all,
-                    and I am eager to help build software for people to use and enjoy in their daily lives.
+                    and I am eager to build software for people to use and enjoy in their daily lives.
                     {"\n\n"}
                     When I am not furthering my skills in software development, I enjoy playing {"\n"}
                     video games, weightlifting, investing, and spending time with friends & family.

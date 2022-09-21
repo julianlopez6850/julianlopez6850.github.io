@@ -44,7 +44,7 @@ function InstaSlot() {
 										target="_blank"
 										rel="noopener noreferrer"
 									>
-										HERE
+										<u>HERE</u>
 									</a>
 									.
 									{"\n\n"}

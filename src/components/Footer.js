@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 
 import '../styles/Footer.css';
 
@@ -20,12 +19,20 @@ function Footer() {
                     <b>Julian Lopez - {today.getFullYear()}</b>
                 </div>
                 <div className="right">
-                    <button onClick={() => {window.open(GithubLink)}}>
+                    <a
+                        href={GithubLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <img src={Github}/>
-                    </button>
-                    <button onClick={() => {window.open(LinkedInLink)}}>
+                    </a>
+                    <a
+                        href={LinkedInLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <img src={LinkedIn}/>
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>

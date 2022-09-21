@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "../styles/Contact.css";
-import ContactBackground from "../assets/ContactBackground.png";
 
 function Contact() {
     const form = useRef();
@@ -9,8 +8,6 @@ function Contact() {
     const sendEmail = (e) => {
       e.preventDefault();
 
-
-  
       emailjs.sendForm('service_57trngd', 'template_ng3zzjf', form.current, 'hxRFoH9Rffcch7ieB')
         .then((result) => {
             console.log(result.text);
@@ -30,7 +27,7 @@ function Contact() {
                         <div className = "left">
                             <input type="text" placeholder="Name *" name="user_name" required />
                             <input type="email" placeholder="Email *" name="user_email" required />
-                            <input type="text" placeholder="Phone" name="user_phone" />
+                            <input type="text" placeholder="Subject" name="user_subject" />
                         </div>
                         <div className = "right">
                             <textarea placeholder="Message *" name="message" required />
