@@ -18,8 +18,6 @@ function App() {
 		<div className="App">
 			
 			<Router>
-				<Navbar />
-				
 				<Routes>
 					<Route exact path="/" element={Homepage} />
 					<Route exact path="/projects/NuMom" element={<NuMom/>} />

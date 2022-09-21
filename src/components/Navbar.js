@@ -8,7 +8,7 @@ import { useScrollPosition } from "../helpers/useScrollPosition";
 import { scrollWithOffset } from "../helpers/scrollWithOffset.js";
 import initialsLogo from '../assets/initialsLogo.svg';
 
-function Navbar() {
+function Navbar(props) {
     const [openLinks, setOpenLinks] = useState(false)
     
     const toggleLinks = () => {
@@ -18,7 +18,7 @@ function Navbar() {
     const scrollPosition = useScrollPosition();
 
     return (
-        <div className = "navbar" id = {(scrollPosition < 0) ? "navbar" : "nav-scrolled"}>
+        <div className = "navbar" id = {(scrollPosition < 260 && props.home) ? "navbar" : "nav-scrolled"}>
             <div className = "content" id = {openLinks ? "show" : "hide"}>
                 <div className = "leftSide" >
                     <HashLink smooth to="/#home" scroll={el => scrollWithOffset(el)}>
@@ -29,15 +29,14 @@ function Navbar() {
                     <HashLink smooth to="/#about" scroll={el => scrollWithOffset(el)}> About </HashLink>
                     <HashLink smooth to="/#projects" scroll={el => scrollWithOffset(el)}> Projects </HashLink>
                     <HashLink smooth to="/#contact" scroll={el => scrollWithOffset(el)}> Contact </HashLink>
-                    <HashLink smooth to="/#contact" scroll={el => scrollWithOffset(el)}> Resume </HashLink>
+                    <HashLink smooth to="/#resume" scroll={el => scrollWithOffset(el)}> Resume </HashLink>
                 </div>
                 <button onClick={toggleLinks}>
                     <MenuIcon />
                 </button>
             </div>
         </div>
-
     )
-  }
+}
 
 export default Navbar
