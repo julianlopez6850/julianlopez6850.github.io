@@ -18,8 +18,8 @@ function ThisWebsite() {
 			image = {props.image}
 			description = {
 							<text1 style={{ whiteSpace: "pre-line" }}>
-								<strong><u>About {props.title}:</u></strong>
-								{"\n\n"}
+								<div id="header"><strong><u>About {props.title}:</u></strong></div>
+								{"\n"}
 								This website is a perpetually updated portfolio website that I created to show off who I am, and the projects that 
 								I have worked on to strengthen my knowledge and skills in software development.
 								{"\n\n"}

@@ -23,8 +23,8 @@ function AliensTookMyFriend() {
 			image = {props.image}
 			description = {
 							<text1 style={{ whiteSpace: "pre-line" }}>
-								<strong><u>About {props.title}:</u></strong>
-								{"\n\n"}
+								<div id="header"><strong><u>About {props.title}:</u></strong></div>
+								{"\n"}
 								'Aliens Took My Friend' is a short top-down space-themed adventure game in which the player plays as an astronaut
 								who's friend has been taken by aliens. The player must make his way through an alien base, entering different rooms
 								and defeating the enemies within, which slowly get harder to fight due to the unique attributes held by certain aliens.
@@ -45,7 +45,7 @@ function AliensTookMyFriend() {
 								The game was built using the <strong>Unity Game Engine</strong> and was developed in <strong>C#</strong>. Version Control was done through 
 								Unity's built-in version control system. We used Discord to communicate with eachother throughout the development process.
 								{"\n\n"}
-								<strong><u>My Contributions to {props.title}:</u></strong>
+								<div id="header"><strong><u>My Contributions to {props.title}:</u></strong></div>
 								<ul>
 									<li>All alien logic including movement, player targetting, physical & shooting attacks, health, etc.</li>
 									<li>Unique alien boss 'phases' that upgrade attributes; updating boss movement, attacks, and health.</li>

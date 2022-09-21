@@ -23,8 +23,8 @@ function InstaSlot() {
 			image = {props.image}
 			description = {
 							<text1 style={{ whiteSpace: "pre-line" }}>
-								<strong><u>About {props.title}:</u></strong>
-								{"\n\n"}
+								<div id="header"><strong><u>About {props.title}:</u></strong></div>
+								{"\n"}
 								'InstaSlot' is a slot machine simulator game in which the player plays on a slot machine with fake, in-game currency. 
                                 The player has the ability to customize the some aesthetic elements of the game, such as the slot machine model,
                                 background skybox, and sound effects.
@@ -50,7 +50,7 @@ function InstaSlot() {
                                 game project in the past, however this was the first project I have completed using these technologies,
                                 so this project was a great way to learn more and gain experience with the two technologies. 
 								{"\n\n"}
-								<strong><u>My Contributions to {props.title}:</u></strong>
+								<div id="header"><strong><u>My Contributions to {props.title}:</u></strong></div>
 								<ul>
 									<li>All "gambling" logic, including: currency, betting, and outcomes.</li>
 									<li>Segments of UI having to do with the above "gambling" logic.</li>

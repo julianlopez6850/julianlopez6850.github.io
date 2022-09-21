@@ -1,13 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 
 import Project from "../helpers/projectsHelper.js";
 import '../styles/Projects.css';
-
-import NuMom from "../assets/NuMom_Screenshot.png";
-import AliensTookMyFriend from "../assets/AliensTookMyFriend_Screenshot.png";
-import ThisWebsite from "../assets/ThisWebsite_Screenshot.png";
-import InstaSlot from "../assets/InstaSlot_Screenshot.png";
 
 import HTMLLogo from "../assets/tech_logos/HTML.svg";
 import CSSLogo from "../assets/tech_logos/CSS.svg";
@@ -19,13 +13,29 @@ import CSharpLogo from "../assets/tech_logos/CSharp.svg";
 import UnityLogo from "../assets/tech_logos/Unity.svg";
 import JavaLogo from "../assets/tech_logos/Java.svg";
 import CLogo from "../assets/tech_logos/C.svg";
+import PythonLogo from "../assets/tech_logos/Python.svg";
+import StreamlitLogo from "../assets/tech_logos/Streamlit.svg";
+
+import NuMom from "../assets/project_screenshots/NuMom_Screenshot.png";
+import AliensTookMyFriend from "../assets/project_screenshots/AliensTookMyFriend_Screenshot.png";
+import ThisWebsite from "../assets/project_screenshots/ThisWebsite_Screenshot.png";
+import InstaSlot from "../assets/project_screenshots/InstaSlot_Screenshot.png";
+import GameCheck from "../assets/project_screenshots/GameCheck_Screenshot.png";
 
 function Projects() {
     return (
         <div className="projects" id="projects">
             <div className="header">
-            <strong>My</strong> Projects
+                <strong>My</strong> Projects
             </div>
+            <Project
+                title="This Website"
+                desc="A perpetually updated portfolio website created to show off who I am, and the projects that I have worked on to strengthen my knowledge and skills in software development."
+                image={ThisWebsite}
+                techIcons={[JavaScriptLogo, ReactLogo, CSSLogo, HTMLLogo]}
+                tech={["JavaScript", "ReactJS", "CSS", "HTML"]}
+                link="/projects/ThisWebsite"
+            />
             <Project
                 title="NuMom"
                 desc="A mobile application aimed to provide access to resources and information to low-income woman regarding sexual health, general health care, and proper infant care."
@@ -43,14 +53,6 @@ function Projects() {
                 link="/projects/AliensTookMyFriend"
             />
             <Project
-                title="This Website"
-                desc="A perpetually updated portfolio website created to show off who I am, and the projects that I have worked on to strengthen my knowledge and skills in software development."
-                image={ThisWebsite}
-                techIcons={[JavaScriptLogo, ReactLogo, CSSLogo, HTMLLogo]}
-                tech={["JavaScript", "ReactJS", "CSS", "HTML"]}
-                link="/projects/ThisWebsite"
-            />
-            <Project
                 title="InstaSlot"
                 desc="A slot machine simulator video game developed by a group of 4, including myself, during ShellHacks 2021 in under 36 hours, for the 'GANstant Win Challenge', sponsored by GAN."
                 image={InstaSlot}
@@ -58,8 +60,16 @@ function Projects() {
                 tech={["Unity", "C#",]}
                 link="/projects/InstaSlot"
             />
+            <Project
+                title="Game Check"
+                desc="A website that displays information about specified video games, and nearby Best Buy locations using the RAWG Video Games Database API and the Best Buy Stores API."
+                image={GameCheck}
+                techIcons={[PythonLogo, StreamlitLogo, GitLogo]}
+                tech={["Python", "Streamlit", "Git"]}
+                link="/projects/GameCheck"
+            />
         </div>
     )
-  }
+}
 
   export default Projects

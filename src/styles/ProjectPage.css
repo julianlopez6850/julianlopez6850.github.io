@@ -43,7 +43,7 @@
     color: var(--primary-hover);
 }
 
-.projectPage .content .description strong u {
+.projectPage .content .description #header strong u {
     color: var(--primary-hover);
     display: inline-block;
     width: 100%;
@@ -82,6 +82,7 @@
 
 .projectPage .content a {
     color: white;
+    text-decoration: none;
 }
 
 .projectPage .content .additionalLinks  {

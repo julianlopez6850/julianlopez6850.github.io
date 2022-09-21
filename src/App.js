@@ -9,6 +9,7 @@ import NuMom from './pages/NuMom.js';
 import AliensTookMyFriend from './pages/AliensTookMyFriend.js';
 import ThisWebsite from './pages/ThisWebsite.js';
 import InstaSlot from './pages/InstaSlot.js';
+import GameCheck from './pages/GameCheck';
 
 import {BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -25,7 +26,7 @@ function App() {
 					<Route exact path="/projects/AliensTookMyFriend" element={<AliensTookMyFriend/>} />
 					<Route exact path="/projects/ThisWebsite" element={<ThisWebsite/>} />
 					<Route exact path="/projects/InstaSlot" element={<InstaSlot/>} />
-
+					<Route exact path="/projects/GameCheck" element={<GameCheck/>} />
 				</Routes>
 
 				<Contact/>

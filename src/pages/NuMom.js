@@ -18,8 +18,8 @@ function NuMom() {
 			image = {props.image}
 			description = {
 							<text1 style={{ whiteSpace: "pre-line" }}>
-								<strong><u>About {props.title}:</u></strong>
-								{"\n\n"}
+								<div id="header"><strong><u>About {props.title}:</u></strong></div>
+								{"\n"}
 								NuMom is a mobile application that aims to provide access to resources and information to low-income and minority woman
 								in South Florida regarding sexual health, general health care, and proper infant care. 
 								{"\n\n"}
@@ -33,8 +33,8 @@ function NuMom() {
 									<li>The ability to record documents, appointments, immunizations, and references for doctors</li>
 									<li>Reminders for recorded appointments</li>
 								</ul>
-								<strong><u>My Involvement with NuMom:</u></strong>
-								{"\n\n"}
+								<div id="header"><strong><u>My Involvement with NuMom:</u></strong></div>
+								{"\n"}
 								I first joined the NuMom team in Fall of 2021 as a Junior member. The expectations with my role on the team were limited
 								to shadowing the Senior members of the team, however, I quickly came to notice a lack of drive from the Senior members and decided
 								to volunteer myself to work on the application. My work during this time consisted of:
@@ -51,8 +51,8 @@ function NuMom() {
 									<li>Scheduling, organizing and leading scrum meetings and meeting documents.</li>
 									<li>Helping development team members with their assigned user stories when needed.</li>
 								</ul>
-								<strong><u>Development Process of NuMom:</u></strong>
-								{"\n\n"}
+								<div id="header"><strong><u>Development Process of NuMom:</u></strong></div>
+								{"\n"}
 								The application is developed in <strong>JavaScript</strong> with <strong>React Native</strong> and it uses <strong>Firebase</strong> as its backend. The team used <strong>Git</strong>{" "}
 								for version control of the application throughout the entire development process and <strong>Github</strong> to manage the repository, 
 								and post new issues & pull requests. We used Discord, Whatsapp, and Zoom throughout development for general communication and meetings.
@@ -63,8 +63,8 @@ function NuMom() {
 								met with the Product Owner to plan out sprints, discuss new user stories to be implemented, and refine old user
 								stories or any practices that may be causing issues within the team.
 								{"\n\n"}
-								<strong><u>History of NuMom:</u></strong>
-								{"\n\n"}
+								<div id="header"><strong><u>History of NuMom:</u></strong></div>
+								{"\n"}
 								NuMom was originally created in Fall of 2019, and is in continuous development each semester by Florida International
 								University (FIU) Computer Science students as part of their senior project. During my time on the NuMom team, we worked
 								on the 6th and 7th versions of the application. 

@@ -1,11 +1,6 @@
 import { Link } from "react-router-dom";
 
 function Project(props) {
-
-    const employees = [];
-
-    console.log(props.tech);
-
     return(
         <div className="project-card">
             <div className="content">
@@ -20,20 +15,22 @@ function Project(props) {
                         {props.desc}
                     </div>
                     <div className="tech-icons">
-                        {props.techIcons.map(techItem => {
+                        {props.techIcons.map((techItem, i) => {
+                            if(i < 4)
                                 return (
                                     <img className="tech-icons" src={techItem} />
                                 );
-                            })}
+                        })}
                     </div>
                     <div className="tech-names">
-                        {props.tech.map(techItem => {
+                        {props.tech.map((techItem, i) => {
+                            if(i < 4)
                                 return (
                                     <div className="names">
-                                        {techItem}
+                                        <b>{techItem}</b>
                                     </div>
                                 );
-                            })}
+                        })}
                     </div>
                     <Link to={props.link} state={{props}}>
                         <div className="learn-more">
@@ -49,6 +46,6 @@ function Project(props) {
             </div>
         </div>
     )
-  }
+}
 
   export default Project;
