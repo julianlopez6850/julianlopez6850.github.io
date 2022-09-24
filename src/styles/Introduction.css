@@ -62,7 +62,7 @@
 .introduction a {
     width: 400px;
     padding: 20px;
-    font-size: 1em;
+    font-size: 16px;
     border-radius: 20px;
     background-color: var(--primary-hover);
     color: var(--background-color);
@@ -84,4 +84,32 @@
     background-color: var(--background-color);
     color: var(--dark);
     border: solid white;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 900px) {
+    .introduction .intro .message {
+        font-size: 20px;
+    }
+    .introduction .intro .message .header {
+        font-size: 54px;
+    }
+    .introduction a {
+        width: 300px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .introduction .intro .message {
+        font-size: 14px;
+    }
+    .introduction .intro .message .header {
+        font-size: 38px;
+    }
+    .introduction a {
+        width: 200px;
+        font-size: 12px;
+    }
 }

@@ -51,7 +51,7 @@
     max-width: 100%;
     padding: 10px;
     margin: 3px;
-    font-size: 1em;
+    font-size: 16px;
     color: var(--primary);
     border-radius: 5px;
     border: 1px solid var(--primary);
@@ -94,4 +94,111 @@
   background-color: var(--background-color);
   color: var(--dark);
   border: 2px solid white;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1500px) {
+    .contact .contact-form input,textarea {
+        width: 525px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .contact .contact-form input,textarea {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .contact {
+        background-size: cover;
+        background-position-x: center;
+        background-repeat: repeat-y;
+        background-size: 1000px;
+    }
+    .contact .contact-form input,textarea {
+        width: 380px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .contact .contact-form input,textarea {
+        width: 320px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .contact .header {
+        font-size: 48px;
+        margin-bottom: 35px;
+    }
+    .contact .contact-form input,textarea {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .contact .content .contact-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contact .contact-form input,textarea {
+        width: 300px;
+        max-width: 100%;
+        padding: 10px;
+        margin: 3px;
+        font-size: 14px;
+        border-radius: 5px;
+    }
+    .contact .contact-form textarea {
+        min-height: 106px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .contact .header {
+        font-size: 40px;
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .contact {
+        height: 100%;
+        width: 100%;
+        margin-bottom: 100px;
+        background-size: cover;
+        background-position-x: left;
+        background-repeat: repeat;
+        background-size: 70%;
+        background-position: calc(50vw) calc(50vw);
+    }
+    .contact .content .contact-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contact .contact-form input,textarea {
+        width: 230px;
+        max-width: 100%;
+        padding: 10px;
+        margin: 3px;
+        font-size: 12px;
+        border-radius: 5px;
+    }
+    .contact .contact-form textarea {
+        min-height: 102px;
+    }
+    .contact .content input[type="submit"] {
+        width: 100px;
+        padding: 10px;
+        font-size: 1em;
+        border-radius: 10px;
+        border: 2px solid var(--background-color);
+        transition: 0.2s;
+    }
 }

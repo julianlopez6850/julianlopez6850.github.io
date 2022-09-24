@@ -29,11 +29,11 @@ function About() {
                     I am a recent graduate of Florida International University (August 2022) with a 
                     {" "}<strong>Bachelor of Science in Computer Science</strong> and a <strong>Minor in Mathematical Sciences</strong>.
                     {"\n\n"}
-                    I am {getAge("07/23/2001")} years old, and I am deeply interested in software design and development. {"\n"}
+                    I am {getAge("07/23/2001")} years old, and I am deeply interested in software design and development.
                     I have a passion for creating innovative solutions to the problems that surround us all,
                     and I am eager to build software for people to use and enjoy in their daily lives.
                     {"\n\n"}
-                    When I am not furthering my skills in software development, I enjoy playing {"\n"}
+                    When I am not furthering my skills in software development, I enjoy playing
                     video games, weightlifting, investing, and spending time with friends & family.
                     </text1>
                 </div>

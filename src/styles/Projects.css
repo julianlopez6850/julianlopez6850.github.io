@@ -47,6 +47,7 @@
 }
 
 .project-card .content .right {
+    height: 300px;
     width: 400px;
     display: flex;
     flex-direction: column;
@@ -102,7 +103,7 @@
 
 /* button is from uiverse.io and has been tweaked */
 
-.projects button {
+.project-card button {
     position: relative;
     display: inline-block;
     cursor: pointer;
@@ -119,7 +120,7 @@
     z-index: 0;
 }
    
-.projects button .circle {
+.project-card button .circle {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: relative;
     display: block;
@@ -130,7 +131,7 @@
     border-radius: 1.625rem;
 }
    
-.projects button .circle .icon {
+.project-card button .circle .icon {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: absolute;
     top: 0;
@@ -139,7 +140,7 @@
     background: var(--background-color);
 }
    
-.projects button .circle .icon.arrow {
+.project-card button .circle .icon.arrow {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     left: 0.625rem;
     width: 1.125rem;
@@ -147,11 +148,11 @@
     background: none;
 }
    
-.projects button .circle .icon.arrow::before {
+.project-card button .circle .icon.arrow::before {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: absolute;
     content: "";
-    top: -0.29rem;
+    top: -0.3rem;
     right: 0.0625rem;
     width: 0.625rem;
     height: 0.625rem;
@@ -160,7 +161,7 @@
     transform: rotate(45deg);
 }
    
-.projects button .button-text {
+.project-card button .button-text {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: absolute;
     top: 0;
@@ -168,7 +169,7 @@
     right: 0;
     bottom: 0;
     padding: 0.6375rem 0rem 0rem 1.75rem;
-    margin: 1 0 0 1.85rem;
+    margin: 0rem 0rem 0rem 0rem;
     color: white;
     font-weight: 700;
     line-height: 1.6;
@@ -180,15 +181,484 @@
     border-color: white;
 }
    
-.projects button:hover .circle {
+.project-card button:hover .circle {
     width: 100%;
 }
    
-.projects button:hover .circle .icon.arrow {
+.project-card button:hover .circle .icon.arrow {
     background: var(--background-color);
     transform: translate(1rem, 0);
 }
    
-.projects button:hover .button-text {
+.project-card button:hover .button-text {
     color: var(--background-color);
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1300px) {
+    .project-card {
+        width: 900px;
+        height: 250px;
+        margin-bottom: 40px;
+    }
+    .project-card .content .left {
+        height: 250px;
+        width: 500px;
+    }
+    .project-card .content .left img {
+        height: 250px;
+        max-width: 445px;
+    }
+    .project-card .content .right {
+        width: 350px;
+        height: 250px;
+    }
+    .project-card .content .right .title {
+        margin-top: 8px;
+        font-size: 24px;
+    }
+    .project-card .content .right .description {
+        padding: 4px 10px 0px 20px;
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+    .project-card .content .right .tech-icons {
+        margin: 0px 20px 0px 20px;
+    }
+    .project-card .content .right .tech-icons img {
+        height: 50px;
+        width: 50px;
+    }
+    .project-card .content .right .tech-names {
+        margin-bottom: 4px;
+    }
+    .project-card .content .right .tech-names .names {
+        font-size: 12px;
+        width: 90px;
+    }
+    .project-card .content .right .learn-more {
+        margin-bottom: 8px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .project-card {
+        width: 800px;
+        height: 200px;
+        margin-bottom: 30px;
+    }
+    .project-card .content .left {
+        height: 200px;
+        width: 500px;
+    }
+    .project-card .content .left img {
+        height: 200px;
+        max-width: 356px;
+    }
+    .project-card .content .right {
+        width: 300px;
+        height: 200px;
+    }
+    .project-card .content .right .title {
+        margin-top: 8px;
+        font-size: 20px;
+    }
+    .project-card .content .right .description {
+        padding: 4px 10px 0px 20px;
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
+    .project-card .content .right .tech-icons {
+        margin: 0px 20px 0px 20px;
+    }
+    .project-card .content .right .tech-icons img {
+        height: 35px;
+        width: 35px;
+    }
+    .project-card .content .right .tech-names {
+        margin-bottom: 4px;
+    }
+    .project-card .content .right .tech-names .names {
+        font-size: 12px;
+        width: 75px;
+    }
+    .project-card .content .right .learn-more {
+        margin-bottom: 8px;
+    }
+
+    .project-card button {
+        width: 10rem;
+    }
+    .project-card button .circle {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 1.625rem;
+    }
+    .project-card button .circle .icon {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: var(--background-color);
+    }
+    .project-card button .circle .icon.arrow {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        left: 0.25rem;
+        width: 1.125rem;
+        height: 0.125rem;
+        background: none;
+    }
+    .project-card button .circle .icon.arrow::before {
+        top: -0.25rem;
+        right: 0.0625rem;
+        width: 0.5rem;
+        height: 0.5rem;
+        border-top: 0.125rem solid var(--background-color);
+        border-right: 0.125rem solid var(--background-color);
+    }
+    .project-card button .button-text {
+        padding: 0.2rem 0rem 0rem 1.25rem;
+        margin: 0rem 0rem 0rem 0rem;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.6;
+        border-radius: 3rem;
+        border-width: 2px;
+    }
+    .project-card button:hover .circle {
+        width: 100%;
+    }
+    .project-card button:hover .circle .icon.arrow {
+        background: var(--background-color);
+        transform: translate(1rem, 0);
+    }
+    .project-card button:hover .button-text {
+        color: var(--background-color);
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .project-card {
+        width: 700px;
+        height: 175px;
+        margin-bottom: 30px;
+    }
+    .project-card .content .left {
+        height: 175px;
+        width: 410px;
+    }
+    .project-card .content .left img {
+        height: 175px;
+        max-width: 311.5px;
+    }
+    .project-card .content .right {
+        width: 300px;
+        height: 175px;
+    }
+    .project-card .content .right .title {
+        margin-top: 8px;
+        font-size: 17px;
+    }
+    .project-card .content .right .description {
+        padding: 4px 10px 0px 20px;
+        font-size: 10px;
+        margin-bottom: 4px;
+    }
+    .project-card .content .right .tech-icons {
+        margin: 0px 15px 0px 15px;
+    }
+    .project-card .content .right .tech-icons img {
+        height: 35px;
+        width: 35px;
+    }
+    .project-card .content .right .tech-names {
+        margin-bottom: 4px;
+    }
+    .project-card .content .right .tech-names .names {
+        font-size: 9px;
+        width: 65px;
+    }
+    .project-card .content .right .learn-more {
+        margin-bottom: 8px;
+    }
+
+    .project-card button {
+        width: 8rem;
+    }
+    .project-card button .circle {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 1.625rem;
+    }
+    .project-card button .circle .icon {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: var(--background-color);
+    }
+    .project-card button .circle .icon.arrow {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        left: 0.25rem;
+        width: 1.125rem;
+        height: 0.125rem;
+        background: none;
+    }
+    .project-card button .circle .icon.arrow::before {
+        top: -0.2rem;
+        right: 0.0625rem;
+        width: 0.4rem;
+        height: 0.4rem;
+        border-top: 0.1rem solid var(--background-color);
+        border-right: 0.1rem solid var(--background-color);
+    }
+    .project-card button .button-text {
+        padding: 0.3rem 0rem 0rem 1.75rem;
+        margin: 0rem 0rem 0rem 0rem;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 1.6;
+        border-radius: 3rem;
+        border-width: 2px;
+    }
+    .project-card button:hover .circle {
+        width: 100%;
+    }
+    .project-card button:hover .circle .icon.arrow {
+        height: 1px;
+        width: 15px;
+        background: var(--background-color);
+        transform: translate(1rem, 0);
+    }
+    .project-card button:hover .button-text {
+        color: var(--background-color);
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .project-card {
+        width: 700px;
+        height: 175px;
+        margin-bottom: 30px;
+    }
+    .projects .header {
+        font-size: 48px;
+        margin-bottom: 35px;
+    }
+    .project-card .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .project-card .content .left {
+        height: 175px;
+        width: 311.5px;
+        justify-content: center;
+        margin-right: 20px;
+    }
+    .project-card .content .left img {
+        height: 175px;
+        max-width: 311.5px;
+    }
+    .project-card .content .right {
+        width: 300px;
+        height: 175px;
+    }
+    .project-card .content .right .title {
+        margin-top: 8px;
+        font-size: 17px;
+    }
+    .project-card .content .right .description {
+        padding: 4px 10px 0px 20px;
+        font-size: 10px;
+        margin-bottom: 4px;
+    }
+    .project-card .content .right .tech-icons {
+        margin: 0px 15px 0px 15px;
+    }
+    .project-card .content .right .tech-icons img {
+        height: 35px;
+        width: 35px;
+    }
+    .project-card .content .right .tech-names {
+        margin-bottom: 4px;
+    }
+    .project-card .content .right .tech-names .names {
+        font-size: 9px;
+        width: 65px;
+    }
+    .project-card .content .right .learn-more {
+        margin-bottom: 8px;
+    }
+
+    .project-card button {
+        width: 8rem;
+    }
+    .project-card button .circle {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 1.625rem;
+    }
+    .project-card button .circle .icon {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: var(--background-color);
+    }
+    .project-card button .circle .icon.arrow {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        left: 0.25rem;
+        width: 1.125rem;
+        height: 0.125rem;
+        background: none;
+    }
+    .project-card button .circle .icon.arrow::before {
+        top: -0.2rem;
+        right: 0.0625rem;
+        width: 0.4rem;
+        height: 0.4rem;
+        border-top: 0.1rem solid var(--background-color);
+        border-right: 0.1rem solid var(--background-color);
+    }
+    .project-card button .button-text {
+        padding: 0.3rem 0rem 0rem 1.75rem;
+        margin: 0rem 0rem 0rem 0rem;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 1.6;
+        border-radius: 3rem;
+        border-width: 2px;
+    }
+    .project-card button:hover .circle {
+        width: 100%;
+    }
+    .project-card button:hover .circle .icon.arrow {
+        height: 1px;
+        width: 15px;
+        background: var(--background-color);
+        transform: translate(1rem, 0);
+    }
+    .project-card button:hover .button-text {
+        color: var(--background-color);
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .project-card {
+        width: 700px;
+        height: 375px;
+        margin-bottom: 20px;
+    }
+    .project-card .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-card .content .left {
+        height: 175px;
+        width: 311.5px;
+        justify-content: center;
+        margin-right: 0px;
+        margin-bottom: -10px;
+    }
+    .project-card .content .left img {
+        height: 175px;
+        max-width: 311.5px;
+    }
+    .project-card .content .right {
+        width: 300px;
+        height: 175px;
+    }
+    .project-card .content .right .title {
+        margin-top: 8px;
+        font-size: 17px;
+    }
+    .project-card .content .right .description {
+        padding: 4px 10px 0px 20px;
+        font-size: 10px;
+        margin-bottom: 4px;
+    }
+    .project-card .content .right .tech-icons {
+        margin: 0px 15px 0px 15px;
+    }
+    .project-card .content .right .tech-icons img {
+        height: 35px;
+        width: 35px;
+    }
+    .project-card .content .right .tech-names {
+        margin-bottom: 4px;
+    }
+    .project-card .content .right .tech-names .names {
+        font-size: 9px;
+        width: 65px;
+    }
+    .project-card .content .right .learn-more {
+        margin-bottom: 8px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .projects .header {
+        font-size: 40px;
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .project-card {
+        width: 700px;
+        height: 375px;
+        margin-bottom: 20px;
+    }
+    .project-card .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-card .content .left {
+        height: 150px;
+        width: 267px;
+        justify-content: center;
+        margin-right: 0px;
+        margin-bottom: -10px;
+    }
+    .project-card .content .left img {
+        height: 150px;
+        max-width: 267px;
+    }
+    .project-card .content .right {
+        width: 250px;
+        height: 200px;
+    }
+    .project-card .content .right .title {
+        margin-top: 8px;
+        font-size: 14px;
+    }
+    .project-card .content .right .description {
+        padding: 4px 10px 0px 20px;
+        font-size: 10px;
+        margin-bottom: 4px;
+    }
+    .project-card .content .right .tech-icons {
+        margin: 0px 15px 0px 15px;
+    }
+    .project-card .content .right .tech-icons img {
+        height: 35px;
+        width: 35px;
+    }
+    .project-card .content .right .tech-names {
+        margin-bottom: 4px;
+    }
+    .project-card .content .right .tech-names .names {
+        font-size: 9px;
+        width: 65px;
+    }
+    .project-card .content .right .learn-more {
+        margin-bottom: 8px;
+    }
 }

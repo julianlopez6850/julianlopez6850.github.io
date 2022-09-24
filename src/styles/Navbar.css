@@ -33,7 +33,7 @@
 }
 
 .navbar .navLinks a {
-    padding: 18px;
+    padding: 19px 18px 19px 18px;
     text-decoration: none;
     color: var(--primary);
     transition: 0.0s;
@@ -66,43 +66,37 @@
 }
 
 .navbar button {
-    padding: 18px;
+    padding: 14px 15px 14px 15px;
     background-color: transparent;
     border: none;
     color: white;
     cursor: pointer;
 }
 
+/* MEDIA QUERIES */
 
-@media only screen and (min-width: 600px) {
-    .navbar .leftSide {
-        display: visible;
-    }
-
-    .navbar .navLinks {
-        display: visible;
-    }
-
+@media only screen and (min-width: 451px) {
     .navbar button {
         display: none;
     }
-    
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 450px) {
     .navbar #show .leftSide {
         display: none;
     }
-
-    .navbar #hide .leftSide {
-        display: visible;
-    }
-
-    .navbar #show .navLinks {
-        display: visible;
-    }
-
     .navbar #hide .navLinks {
         display: none;
+    }
+    .navbar .navLinks a {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .navbar .navLinks a {
+        font-size: 12px;
+        padding: 22px 10px 19px 12px;
     }
 }

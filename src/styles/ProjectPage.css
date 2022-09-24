@@ -91,7 +91,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-} 
+}
 
 .projectPage .content .additionalLinks  button {
     width: 360px;
@@ -109,7 +109,7 @@
     transition: 0.2s;
     text-decoration: none;
     margin-bottom: 10px;
-} 
+}
   
 .projectPage .content .additionalLinks button:hover {
     border: white;
@@ -135,4 +135,99 @@
     height: 24px;
     width: 24px;
     fill: white;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1920px) {
+    .projectPage .content {
+        width: 1920px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .projectPage .content {
+        width: 1300px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .projectPage .content {
+        width: 1000px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .projectPage .content {
+        width: 750px;
+    }
+    .projectPage .header {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+    .projectPage .content .screenshot img {
+        height: 200px;
+        margin-bottom: 15px;
+    }
+    .projectPage .content .description {
+        font-size: 14px;
+    }
+    .projectPage .content .tech-icons img {
+        height: 40px;
+        width: 40px;
+    }
+    .projectPage .content .tech-names .names {
+        font-size: 12px;
+        width: 80px;
+    }
+    .projectPage .content .additionalLinks  {
+        margin-top: 20px;
+    }
+    .projectPage .content .additionalLinks  button {
+        width: 280px;
+        padding: 16px;
+        margin-bottom: 5px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .projectPage .content {
+        width: 550px;
+    }
+    .projectPage .header {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+    .projectPage .content .screenshot img {
+        height: 150px;
+        margin-bottom: 15px;
+    }
+    .projectPage .content .description {
+        font-size: 12px;
+    }
+    .projectPage .content .tech-icons img {
+        height: 30px;
+        width: 30px;
+    }
+    .projectPage .content .tech-names .names {
+        font-size: 10px;
+        width: 70px;
+    }
+    .projectPage .content .additionalLinks  {
+        margin-top: 20px;
+    }
+    .projectPage .content .additionalLinks  button {
+        width: 240px;
+        padding: 12px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .projectPage .content {
+        width: 500px;
+    }
+    .projectPage .header {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
 }

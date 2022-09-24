@@ -74,7 +74,7 @@ function NuMom() {
 									on the 6th and 7th versions of the application. 
 									{"\n\n"}
 									The Product Owner of NuMom is Dr. Jean Hannan, an associate professor at FIU's College of Nursing. 
-									Our lead mentor, who often acted as Product Owner on Jean's behalf, was Eduardo Morales, a NuMom veteran contributor,{"\n"}
+									Our lead mentor, who often acted as Product Owner on Jean's behalf, was Eduardo Morales, a NuMom veteran contributor,
 									FIU alumnus, and full-stack software engineer at IBM. NuMom is property of FIU.
 									{"\n\n"}
 								</text1>
