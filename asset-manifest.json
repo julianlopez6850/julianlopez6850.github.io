@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.c5fb414d.css",
+    "main.css": "/static/css/main.8b864e7c.css",
     "main.js": "/static/js/main.450fa3fa.js",
     "static/js/787.749b4a44.chunk.js": "/static/js/787.749b4a44.chunk.js",
     "static/media/MiamiSkyline.png": "/static/media/MiamiSkyline.8a1d38f60e1a195515a5.png",
@@ -30,12 +30,12 @@
     "static/media/UnityDark.svg": "/static/media/UnityDark.bcdf2c90bef8b572d99b7918fccd67e2.svg",
     "static/media/CSS.svg": "/static/media/CSS.4e47c3122b8d2476a02f97dcfcb28640.svg",
     "static/media/HTML.svg": "/static/media/HTML.f318c8b1d5945fa9adc827ae94849cb1.svg",
-    "main.c5fb414d.css.map": "/static/css/main.c5fb414d.css.map",
+    "main.8b864e7c.css.map": "/static/css/main.8b864e7c.css.map",
     "main.450fa3fa.js.map": "/static/js/main.450fa3fa.js.map",
     "787.749b4a44.chunk.js.map": "/static/js/787.749b4a44.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5fb414d.css",
+    "static/css/main.8b864e7c.css",
     "static/js/main.450fa3fa.js"
   ]
 }
