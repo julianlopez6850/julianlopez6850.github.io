@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.403dc832.css",
-    "main.js": "/static/js/main.450fa3fa.js",
+    "main.js": "/static/js/main.6a25abf4.js",
     "static/js/787.749b4a44.chunk.js": "/static/js/787.749b4a44.chunk.js",
     "static/media/MiamiSkyline.png": "/static/media/MiamiSkyline.8a1d38f60e1a195515a5.png",
     "static/media/NuMom_Screenshot.png": "/static/media/NuMom_Screenshot.c11b39662a345aa93597.png",
@@ -24,18 +24,18 @@
     "static/media/Github.svg": "/static/media/Github.5ad559fd4bd9354ba07005a2eb8af5bf.svg",
     "static/media/LinkedIn.svg": "/static/media/LinkedIn.f550917c8b7cf449d5451b903e1eb306.svg",
     "static/media/Firebase.svg": "/static/media/Firebase.276e110384b4d3db427b943310172dc9.svg",
-    "static/media/Git.svg": "/static/media/Git.c60b7e5ae8ec2562f23fdddcab300026.svg",
     "index.html": "/index.html",
+    "static/media/Git.svg": "/static/media/Git.c60b7e5ae8ec2562f23fdddcab300026.svg",
     "static/media/Unity.svg": "/static/media/Unity.614c22e81c1440780350bf06439ce039.svg",
     "static/media/UnityDark.svg": "/static/media/UnityDark.bcdf2c90bef8b572d99b7918fccd67e2.svg",
     "static/media/CSS.svg": "/static/media/CSS.4e47c3122b8d2476a02f97dcfcb28640.svg",
     "static/media/HTML.svg": "/static/media/HTML.f318c8b1d5945fa9adc827ae94849cb1.svg",
     "main.403dc832.css.map": "/static/css/main.403dc832.css.map",
-    "main.450fa3fa.js.map": "/static/js/main.450fa3fa.js.map",
+    "main.6a25abf4.js.map": "/static/js/main.6a25abf4.js.map",
     "787.749b4a44.chunk.js.map": "/static/js/787.749b4a44.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.403dc832.css",
-    "static/js/main.450fa3fa.js"
+    "static/js/main.6a25abf4.js"
   ]
 }
