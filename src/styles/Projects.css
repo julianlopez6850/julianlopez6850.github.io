@@ -550,7 +550,7 @@
 
 @media only screen and (max-width: 700px) {
     .project-card {
-        width: 700px;
+        width: 100%;
         height: 375px;
         margin-bottom: 20px;
     }
@@ -610,11 +610,6 @@
 }
 
 @media only screen and (max-width: 450px) {
-    .project-card {
-        width: 700px;
-        height: 375px;
-        margin-bottom: 20px;
-    }
     .project-card .content {
         display: flex;
         flex-direction: column;

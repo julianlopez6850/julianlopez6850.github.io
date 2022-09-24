@@ -141,25 +141,25 @@
 
 @media only screen and (max-width: 1920px) {
     .projectPage .content {
-        width: 1920px;
+        width: 1300px;
     }
 }
 
 @media only screen and (max-width: 1300px) {
     .projectPage .content {
-        width: 1300px;
-    }
-}
-
-@media only screen and (max-width: 900px) {
-    .projectPage .content {
         width: 1000px;
     }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1000px) {
     .projectPage .content {
         width: 750px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .projectPage .content {
+        width: 550px;;
     }
     .projectPage .header {
         font-size: 40px;
@@ -190,9 +190,9 @@
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 550px) {
     .projectPage .content {
-        width: 550px;
+        width: 450px;
     }
     .projectPage .header {
         font-size: 32px;
@@ -222,9 +222,12 @@
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
     .projectPage .content {
-        width: 500px;
+        width: 250px;
+    }
+    .projectPage .content .description {
+        width: 100%;
     }
     .projectPage .header {
         font-size: 24px;
