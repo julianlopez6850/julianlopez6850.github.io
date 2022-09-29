@@ -20,7 +20,12 @@ function Navbar(props) {
     const scrollPosition = useScrollPosition();
 
     return (
-        <div className = "navbar" id = {(scrollPosition < 260 && props.home) ? "navbar" : "nav-scrolled"}>
+        <div className = "navbar" id = {(
+        ((window.innerHeight > 800) ? scrollPosition < 220 : 
+        (window.innerHeight > 700 ? scrollPosition < 180 : 
+        (window.innerHeight > 600 ? scrollPosition < 120 : 
+        (window.innerHeight > 500 ? scrollPosition < 90 : scrollPosition < 70))))
+        && props.home) ? "navbar" : "nav-scrolled"}>
             <div className = "content" id = {openLinks ? "show" : "hide"}>
                 <div className = "leftSide" >
                     <HashLink smooth to="/#home" scroll={el => scrollWithOffset(el)}>

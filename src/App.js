@@ -10,8 +10,12 @@ import AliensTookMyFriend from './pages/AliensTookMyFriend.js';
 import ThisWebsite from './pages/ThisWebsite.js';
 import InstaSlot from './pages/InstaSlot.js';
 import GameCheck from './pages/GameCheck';
+//import WordleClone from './pages/WordleClone';
 
-import {BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import UnderConstruction from './pages/UnderConstruction';
+import PageNotFound from './pages/PageNotFound';
+
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
 	return (
@@ -25,6 +29,8 @@ function App() {
 					<Route exact path="/projects/ThisWebsite" element={<ThisWebsite/>} />
 					<Route exact path="/projects/InstaSlot" element={<InstaSlot/>} />
 					<Route exact path="/projects/GameCheck" element={<GameCheck/>} />
+					<Route exact path="/projects/WordleClone" element={<UnderConstruction/>} />
+					<Route exact path="/*" element={<PageNotFound/>} />
 				</Routes>
 
 				<Contact/>

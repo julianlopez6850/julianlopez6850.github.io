@@ -1,73 +1,37 @@
 import React, { useState, useEffect } from "react";
 
 import Project from "../helpers/projectsHelper.js";
+import { projectsList } from './projectsList.js';
 import '../styles/Projects.css';
 
-import HTMLLogo from "../assets/tech_logos/HTML.svg";
-import CSSLogo from "../assets/tech_logos/CSS.svg";
-import JavaScriptLogo from "../assets/tech_logos/JavaScript.svg";
-import ReactLogo from "../assets/tech_logos/React.svg";
-import GitLogo from "../assets/tech_logos/Git.svg";
-import FirebaseLogo from "../assets/tech_logos/Firebase.svg";
-import CSharpLogo from "../assets/tech_logos/CSharp.svg";
-import UnityLogo from "../assets/tech_logos/Unity.svg";
-import JavaLogo from "../assets/tech_logos/Java.svg";
-import CLogo from "../assets/tech_logos/C.svg";
-import PythonLogo from "../assets/tech_logos/Python.svg";
-import StreamlitLogo from "../assets/tech_logos/Streamlit.svg";
-
-import NuMom from "../assets/project_screenshots/NuMom_Screenshot.png";
-import AliensTookMyFriend from "../assets/project_screenshots/AliensTookMyFriend_Screenshot.png";
-import ThisWebsite from "../assets/project_screenshots/ThisWebsite_Screenshot.png";
-import InstaSlot from "../assets/project_screenshots/InstaSlot_Screenshot.png";
-import GameCheck from "../assets/project_screenshots/GameCheck_Screenshot.png";
-
 function Projects() {
+    const [showAtOnce, setShowAtOnce] = useState(3);
+    var isShowingMore = false;
     return (
         <div className="projects" id="projects">
             <div className="header">
                 <strong>My</strong> Projects
             </div>
-            <Project
-                title="This Website"
-                desc="A perpetually updated portfolio website created to show off who I am, and the projects that I have worked on to strengthen my knowledge and skills in software development."
-                image={ThisWebsite}
-                techIcons={[JavaScriptLogo, ReactLogo, CSSLogo, HTMLLogo]}
-                tech={["JavaScript", "ReactJS", "CSS", "HTML"]}
-                link="/projects/ThisWebsite"
-            />
-            <Project
-                title="NuMom"
-                desc="A mobile application aimed to provide access to resources and information to low-income woman regarding sexual health, general health care, and proper infant care."
-                image={NuMom}
-                techIcons={[JavaScriptLogo, ReactLogo, FirebaseLogo, GitLogo]}
-                tech={["JavaScript", "React Native", "Firebase", "Git"]}
-                link="/projects/NuMom"
-            />
-            <Project
-                title="Aliens Took My Friend"
-                desc="A short space-themed video game developed by a friend and I during KnightHacks 2021 in under 36 hours, which was awarded 'Best Space App', sponsored by the United States Space Force."
-                image={AliensTookMyFriend}
-                techIcons={[UnityLogo, CSharpLogo]}
-                tech={["Unity", "C#",]}
-                link="/projects/AliensTookMyFriend"
-            />
-            <Project
-                title="InstaSlot"
-                desc="A slot machine simulator video game developed by a group of 4, including myself, during ShellHacks 2021 in under 36 hours, for the 'GANstant Win Challenge', sponsored by GAN."
-                image={InstaSlot}
-                techIcons={[UnityLogo, CSharpLogo]}
-                tech={["Unity", "C#",]}
-                link="/projects/InstaSlot"
-            />
-            <Project
-                title="Game Check"
-                desc="A website that displays information about specified video games, and nearby Best Buy locations using the RAWG Video Games Database API and the Best Buy Stores API."
-                image={GameCheck}
-                techIcons={[PythonLogo, StreamlitLogo, GitLogo]}
-                tech={["Python", "Streamlit", "Git"]}
-                link="/projects/GameCheck"
-            />
+            {projectsList.map((project, i) => {
+                if(i < showAtOnce)
+                {
+                    isShowingMore = false;
+                    return(<Project
+                        title={project.title}
+                        desc={project.desc}
+                        image={project.image}
+                        techIcons={project.techIcons}
+                        tech={project.tech}
+                        link={project.link}
+                    />)
+                }
+                else if(!isShowingMore){
+                    isShowingMore = true;
+                    return(<button id="showMore" onClick={() => setShowAtOnce(showAtOnce + 3)}>Show More</button>)
+                }
+            })}
+            
+            {(!isShowingMore) ? <button id="showLess" onClick={() => setShowAtOnce(showAtOnce - 3)}>Show Less</button> : (showAtOnce > 3) ? <button id="showBoth" onClick={() => setShowAtOnce(showAtOnce - 3)}>Show Less</button> : ""}
         </div>
     )
 }

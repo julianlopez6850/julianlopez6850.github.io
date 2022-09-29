@@ -171,9 +171,8 @@
         width: 100%;
         margin-bottom: 100px;
         background-size: cover;
-        background-position-x: left;
         background-repeat: repeat;
-        background-size: 70%;
+        background-size: 65%;
         background-position: calc(50vw) calc(50vw);
     }
     .contact .content .contact-form {
