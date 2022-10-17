@@ -27,8 +27,9 @@ function ThisWebsite() {
 									This website is a perpetually updated portfolio website that I created to show off who I am, and the projects that 
 									I have worked on to strengthen my knowledge and skills in software development.
 									{"\n\n"}
-									It was built using JavaScript with ReactJS, as well as CSS, and HTML. Although I have worked with these technologies before
-									on various projects, this is the first project that I have fully completed from start to finish using them.
+									It was built using <strong>JavaScript</strong> with <strong>ReactJS</strong>, as well as <strong>CSS</strong>, and <strong>HTML</strong>.
+									Although I have worked with these technologies before on various projects, 
+									this is the first project that I have fully completed from start to finish using them.
 									{"\n\n"}
 									P.S. Thank you for visiting my site! :)
 									{"\n\n"}

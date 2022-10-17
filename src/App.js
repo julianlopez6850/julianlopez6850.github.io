@@ -10,7 +10,7 @@ import AliensTookMyFriend from './pages/AliensTookMyFriend.js';
 import ThisWebsite from './pages/ThisWebsite.js';
 import InstaSlot from './pages/InstaSlot.js';
 import GameCheck from './pages/GameCheck';
-//import WordleClone from './pages/WordleClone';
+import WordleClone from './pages/WordleClone';
 
 import UnderConstruction from './pages/UnderConstruction';
 import PageNotFound from './pages/PageNotFound';
@@ -29,7 +29,7 @@ function App() {
 					<Route exact path="/projects/ThisWebsite" element={<ThisWebsite/>} />
 					<Route exact path="/projects/InstaSlot" element={<InstaSlot/>} />
 					<Route exact path="/projects/GameCheck" element={<GameCheck/>} />
-					<Route exact path="/projects/WordleClone" element={<UnderConstruction/>} />
+					<Route exact path="/projects/WordleClone" element={<WordleClone/>} />
 					<Route exact path="/*" element={<PageNotFound/>} />
 				</Routes>
 

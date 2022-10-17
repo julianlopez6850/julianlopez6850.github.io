@@ -16,6 +16,7 @@ import AliensTookMyFriend from "../assets/project_screenshots/AliensTookMyFriend
 import ThisWebsite from "../assets/project_screenshots/ThisWebsite_Screenshot.png";
 import InstaSlot from "../assets/project_screenshots/InstaSlot_Screenshot.png";
 import GameCheck from "../assets/project_screenshots/GameCheck_Screenshot.png";
+import WordleClone from "../assets/project_screenshots/WordleClone_Screenshot.png";
 
 export const projectsList = [
     {
@@ -61,7 +62,7 @@ export const projectsList = [
     {
         title:"Wordle Clone",
         desc:"A remake of the popular word game website 'Wordle,' owned by the NY Times. (This project is currently incomplete and under construction)",
-        image:{},
+        image:WordleClone,
         techIcons:[JavaScriptLogo, ReactLogo, CSSLogo, HTMLLogo],
         tech:["JavaScript", "ReactJS", "CSS", "HTML"],
         link:"/projects/WordleClone"
