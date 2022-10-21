@@ -44,12 +44,12 @@ export const projectsList = [
         link:"/projects/AliensTookMyFriend"
     },
     {
-        title:"InstaSlot",
-        desc:"A slot machine simulator video game developed by a group of 4, including myself, during ShellHacks 2021 in under 36 hours, for the 'GANstant Win Challenge', sponsored by GAN.",
-        image:InstaSlot,
-        techIcons:[UnityLogo, CSharpLogo],
-        tech:["Unity", "C#",],
-        link:"/projects/InstaSlot"
+        title:"Wordle Clone",
+        desc:"A remake of the popular word game website 'Wordle,' owned by the NY Times. (This project is currently incomplete and under construction)",
+        image:WordleClone,
+        techIcons:[JavaScriptLogo, ReactLogo, CSSLogo, HTMLLogo],
+        tech:["JavaScript", "ReactJS", "CSS", "HTML"],
+        link:"/projects/WordleClone"
     },
     {
         title:"Game Check",
@@ -60,11 +60,11 @@ export const projectsList = [
         link:"/projects/GameCheck"
     },
     {
-        title:"Wordle Clone",
-        desc:"A remake of the popular word game website 'Wordle,' owned by the NY Times. (This project is currently incomplete and under construction)",
-        image:WordleClone,
-        techIcons:[JavaScriptLogo, ReactLogo, CSSLogo, HTMLLogo],
-        tech:["JavaScript", "ReactJS", "CSS", "HTML"],
-        link:"/projects/WordleClone"
+        title:"InstaSlot",
+        desc:"A slot machine simulator video game developed by a group of 4, including myself, during ShellHacks 2021 in under 36 hours, for the 'GANstant Win Challenge', sponsored by GAN.",
+        image:InstaSlot,
+        techIcons:[UnityLogo, CSharpLogo],
+        tech:["Unity", "C#",],
+        link:"/projects/InstaSlot"
     },
 ];
