@@ -25,13 +25,30 @@ function Projects() {
                         link={project.link}
                     />)
                 }
-                else if(!isShowingMore){
+                if(!isShowingMore){
                     isShowingMore = true;
-                    return(<button id="showMore" onClick={() => setShowAtOnce(showAtOnce + 3)}>Show More</button>)
+                    return(
+                        <div className="buttons">
+                            <button id="showMore" onClick={() => setShowAtOnce(showAtOnce + 3)}>
+                                Show More
+                            </button>
+                        </div>
+                    )
                 }
             })}
             
-            {(!isShowingMore) ? <button id="showLess" onClick={() => setShowAtOnce(showAtOnce - 3)}>Show Less</button> : (showAtOnce > 3) ? <button id="showBoth" onClick={() => setShowAtOnce(showAtOnce - 3)}>Show Less</button> : ""}
+            <div className="buttons">
+                {(!isShowingMore) ? 
+                    <button id="showLess" onClick={() => setShowAtOnce(showAtOnce - 3)}>
+                        Show Less
+                    </button> : 
+                (showAtOnce > 3) ? 
+                    <button id="showBoth" onClick={() => setShowAtOnce(showAtOnce - 3)}>
+                        Show Less
+                    </button> :
+                ""
+                }
+            </div>
         </div>
     )
 }

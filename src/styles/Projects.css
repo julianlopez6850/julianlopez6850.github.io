@@ -18,6 +18,13 @@
     color: var(--primary-hover);
 }
 
+.buttons {
+    width: 1040px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 #showMore {
     width: 250px;
     padding: 20px;
@@ -29,7 +36,7 @@
     border-style: solid;
     transition: 0.2s;
     text-decoration: none;
-    margin-right: 300px;
+    margin-right: 70%;
 }
 
 #showBoth {
@@ -43,8 +50,8 @@
     border-style: solid;
     transition: 0.2s;
     text-decoration: none;
-    margin-left: 300px;
     margin-top: -65px;
+    margin-left: 70%;
 }
 
 #showLess {
@@ -58,7 +65,7 @@
     border-style: solid;
     transition: 0.2s;
     text-decoration: none;
-    margin-left: 300px;
+    margin-left: 70%;
 }
 
 #showMore:hover,#showLess:hover,#showBoth:hover {
@@ -72,7 +79,7 @@
 }
 
 .project-card {
-    width: 1100px;
+    width: 1040px;
     height: 300px;
     margin-bottom: 50px;
 }
@@ -85,7 +92,7 @@
 
 .project-card .content .left {
     height: 300px;
-    width: 600px;
+    width: 540px;
     display: flex;
     justify-content: center;
 }
@@ -251,13 +258,13 @@
 
 @media only screen and (max-width: 1300px) {
     .project-card {
-        width: 900px;
+        width: 880px;
         height: 250px;
         margin-bottom: 40px;
     }
     .project-card .content .left {
         height: 250px;
-        width: 500px;
+        width: 445px;
     }
     .project-card .content .left img {
         height: 250px;
@@ -293,17 +300,28 @@
     .project-card .content .right .learn-more {
         margin-bottom: 8px;
     }
+
+    .buttons {
+        width: 880px;
+    }
+    #showMore,#showBoth,#showLess {
+        width: 200px;
+        padding: 18px;
+    }
+    #showBoth {
+        margin-top: -61px;
+    }
 }
 
 @media only screen and (max-width: 1100px) {
     .project-card {
-        width: 800px;
+        width: 720px;
         height: 200px;
         margin-bottom: 30px;
     }
     .project-card .content .left {
         height: 200px;
-        width: 500px;
+        width: 356px;
     }
     .project-card .content .left img {
         height: 200px;
@@ -390,17 +408,28 @@
     .project-card button:hover .button-text {
         color: var(--background-color);
     }
+    
+    .buttons {
+        width: 720px;
+    }
+    #showMore,#showBoth,#showLess {
+        width: 175px;
+        padding: 14px;
+    }
+    #showBoth {
+        margin-top: -53px;
+    }
 }
 
 @media only screen and (max-width: 900px) {
     .project-card {
-        width: 700px;
+        width: 670px;
         height: 175px;
         margin-bottom: 30px;
     }
     .project-card .content .left {
         height: 175px;
-        width: 410px;
+        width: 311.5px;
     }
     .project-card .content .left img {
         height: 175px;
@@ -489,11 +518,23 @@
     .project-card button:hover .button-text {
         color: var(--background-color);
     }
+    
+    .buttons {
+        width: 670px;
+    }
+    #showMore,#showBoth,#showLess {
+        width: 150px;
+        padding: 12px;
+        font-size: 14px;
+    }
+    #showBoth {
+        margin-top: -47px;
+    }
 }
 
 @media only screen and (max-width: 800px) {
     .project-card {
-        width: 700px;
+        width: 650px;
         height: 175px;
         margin-bottom: 30px;
     }
@@ -504,7 +545,7 @@
     .project-card .content {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
     }
     .project-card .content .left {
         height: 175px;
@@ -599,6 +640,17 @@
     .project-card button:hover .button-text {
         color: var(--background-color);
     }
+    
+    .buttons {
+        width: 650px;
+    }
+    #showMore,#showBoth,#showLess {
+        width: 135px;
+        padding: 10px;
+    }
+    #showBoth {
+        margin-top: -43px;
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -652,6 +704,18 @@
     }
     .project-card .content .right .learn-more {
         margin-bottom: 8px;
+    }
+    
+    .buttons {
+        width: 260px;
+    }
+    #showMore,#showBoth,#showLess {
+        min-width: 125px;
+        padding: 10px;
+        font-size: 12px;
+    }
+    #showBoth {
+        margin-top: -40px;
     }
 }
 
@@ -708,5 +772,17 @@
     }
     .project-card .content .right .learn-more {
         margin-bottom: 8px;
+    }
+    
+    .buttons {
+        width: 200px;
+    }
+    #showMore,#showBoth,#showLess {
+        min-width: 110px;
+        padding: 10px;
+        font-size: 12px;
+    }
+    #showBoth {
+        margin-top: -40px;
     }
 }
