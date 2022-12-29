@@ -2,6 +2,8 @@ import HTMLLogo from "../assets/tech_logos/HTML.svg";
 import CSSLogo from "../assets/tech_logos/CSS.svg";
 import JavaScriptLogo from "../assets/tech_logos/JavaScript.svg";
 import ReactLogo from "../assets/tech_logos/React.svg";
+import NodeLogo from "../assets/tech_logos/NodeJS.svg";
+import MySQLLogo from "../assets/tech_logos/MySQL.svg";
 import GitLogo from "../assets/tech_logos/Git.svg";
 import FirebaseLogo from "../assets/tech_logos/Firebase.svg";
 import CSharpLogo from "../assets/tech_logos/CSharp.svg";
@@ -17,6 +19,7 @@ import ThisWebsite from "../assets/project_screenshots/ThisWebsite_Screenshot.pn
 import InstaSlot from "../assets/project_screenshots/InstaSlot_Screenshot.png";
 import GameCheck from "../assets/project_screenshots/GameCheck_Screenshot.png";
 import WordleClone from "../assets/project_screenshots/WordleClone_Screenshot.png";
+import VINYLE from "../assets/project_screenshots/VINYLE_Screenshot.png";
 
 export const projectsList = [
     {
@@ -34,6 +37,14 @@ export const projectsList = [
         techIcons:[JavaScriptLogo, ReactLogo, FirebaseLogo, GitLogo],
         tech:["JavaScript", "React Native", "Firebase", "Git"],
         link:"/projects/NuMom"
+    },
+    {
+        title:"VINYLE",
+        desc:"A web application, similar to the popular word-guessing game, 'Wordle', where the player is instructed to guess an album from a cropped portion of its cover art.",
+        image:VINYLE,
+        techIcons:[JavaScriptLogo, ReactLogo, NodeLogo, MySQLLogo, CSSLogo, HTMLLogo],
+        tech:["JavaScript", "ReactJS", "NodeJS", "MySQL", "CSS", "HTML"],
+        link:"/projects/VINYLE"
     },
     {
         title:"Aliens Took My Friend",

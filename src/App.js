@@ -11,6 +11,7 @@ import ThisWebsite from './pages/ThisWebsite.js';
 import InstaSlot from './pages/InstaSlot.js';
 import GameCheck from './pages/GameCheck';
 import WordleClone from './pages/WordleClone';
+import VINYLE from './pages/VINYLE';
 
 import UnderConstruction from './pages/UnderConstruction';
 import PageNotFound from './pages/PageNotFound';
@@ -30,6 +31,7 @@ function App() {
 					<Route exact path="/projects/InstaSlot" element={<InstaSlot/>} />
 					<Route exact path="/projects/GameCheck" element={<GameCheck/>} />
 					<Route exact path="/projects/WordleClone" element={<WordleClone/>} />
+					<Route exact path="/projects/VINYLE" element={<VINYLE/>} />
 					<Route exact path="/*" element={<PageNotFound/>} />
 				</Routes>
 
