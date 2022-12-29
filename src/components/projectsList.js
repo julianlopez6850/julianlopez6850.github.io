@@ -45,7 +45,7 @@ export const projectsList = [
     },
     {
         title:"Wordle Clone",
-        desc:"A remake of the popular word game website 'Wordle,' owned by the NY Times. (This project is currently incomplete and under construction)",
+        desc:"A remake of the popular daily word guessing game website, 'Wordle', owned by the NY Times.",
         image:WordleClone,
         techIcons:[JavaScriptLogo, ReactLogo, CSSLogo, HTMLLogo],
         tech:["JavaScript", "ReactJS", "CSS", "HTML"],
