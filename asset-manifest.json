@@ -1,21 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.0bd81121.css",
-    "main.js": "/static/js/main.33eb7ed1.js",
+    "main.css": "/static/css/main.6c063388.css",
+    "main.js": "/static/js/main.8eb374b7.js",
     "static/js/787.749b4a44.chunk.js": "/static/js/787.749b4a44.chunk.js",
     "static/media/MiamiSkyline.png": "/static/media/MiamiSkyline.8a1d38f60e1a195515a5.png",
     "static/media/NuMom_Screenshot.png": "/static/media/NuMom_Screenshot.c11b39662a345aa93597.png",
     "static/media/AliensTookMyFriend_Screenshot.png": "/static/media/AliensTookMyFriend_Screenshot.3b45f1ea8b93c4a7c808.png",
     "static/media/InstaSlot_Screenshot.png": "/static/media/InstaSlot_Screenshot.0b9cd2bc1a3566308f64.png",
     "static/media/ContactBackground.png": "/static/media/ContactBackground.68c0b451896b8d2266db.png",
+    "static/media/VINYLE_Screenshot.png": "/static/media/VINYLE_Screenshot.3cfe4094a5dc7c9faf4d.png",
     "static/media/GameCheck_Screenshot.png": "/static/media/GameCheck_Screenshot.80a8ac1445cd596112d6.png",
     "static/media/WordleClone_Screenshot.png": "/static/media/WordleClone_Screenshot.cd15908c76230311be4d.png",
     "static/media/ThisWebsite_Screenshot.png": "/static/media/ThisWebsite_Screenshot.e511b3e1d686b6a85eda.png",
-    "static/media/UnderConstruction.svg": "/static/media/UnderConstruction.0dac946178ec6a09bf7ccbb02a9c413c.svg",
+    "static/media/UnderConstruction.svg": "/static/media/UnderConstruction.2ad7a0ab9f7661d2f7ebf1be394e08e3.svg",
+    "static/media/MySQL.svg": "/static/media/MySQL.0697e026464104aea8919845703174b9.svg",
     "static/media/KnighthacksLogo.svg": "/static/media/KnighthacksLogo.f21fe498d7d2c15a472730f54b47f0ff.svg",
     "static/media/React.svg": "/static/media/React.e68b35f4774979ae220b1d5d7b345b00.svg",
     "static/media/CSharp.svg": "/static/media/CSharp.04d9d2bb18b9781567f7340691dcc686.svg",
     "static/media/Streamlit.svg": "/static/media/Streamlit.23b6081dc606ab3ef89f24d685d66719.svg",
+    "static/media/NodeJS.svg": "/static/media/NodeJS.502737ea1f44b9be4170cafd2bace4e7.svg",
     "static/media/Java.svg": "/static/media/Java.2c5d38eae4a3a352dd64b4fe904a14dd.svg",
     "static/media/ShellhacksLogo.svg": "/static/media/ShellhacksLogo.a1cca78173030b9c8b016300239a5b0d.svg",
     "static/media/initialsLogo.svg": "/static/media/initialsLogo.a17a30d027451a16d3bd2a4530cfcd4c.svg",
@@ -32,12 +35,12 @@
     "static/media/UnityDark.svg": "/static/media/UnityDark.bcdf2c90bef8b572d99b7918fccd67e2.svg",
     "static/media/CSS.svg": "/static/media/CSS.4e47c3122b8d2476a02f97dcfcb28640.svg",
     "static/media/HTML.svg": "/static/media/HTML.f318c8b1d5945fa9adc827ae94849cb1.svg",
-    "main.0bd81121.css.map": "/static/css/main.0bd81121.css.map",
-    "main.33eb7ed1.js.map": "/static/js/main.33eb7ed1.js.map",
+    "main.6c063388.css.map": "/static/css/main.6c063388.css.map",
+    "main.8eb374b7.js.map": "/static/js/main.8eb374b7.js.map",
     "787.749b4a44.chunk.js.map": "/static/js/787.749b4a44.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0bd81121.css",
-    "static/js/main.33eb7ed1.js"
+    "static/css/main.6c063388.css",
+    "static/js/main.8eb374b7.js"
   ]
 }
