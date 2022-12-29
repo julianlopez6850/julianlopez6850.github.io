@@ -137,6 +137,32 @@
     fill: white;
 }
 
+.tooltip {
+    position: relative;
+    cursor:help
+}
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: max-content;
+    min-width: 100%;
+    max-width: 490px;
+    position: absolute;
+    bottom: 100%;
+    left: -50%;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: var(--scrolled-background);
+    font-size: 16px;
+    color: white;
+    transition: 0.1s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 1920px) {

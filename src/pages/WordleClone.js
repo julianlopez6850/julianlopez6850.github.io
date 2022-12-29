@@ -24,8 +24,16 @@ function WordleClone() {
 								<text1 style={{ whiteSpace: "pre-line" }}>
 									<div id="header"><strong><u>About {props.title}:</u></strong></div>
 									{"\n"}
-									Wordle Clone is a reproduction of the popular word game website Wordle. The original game was created by Josh Wardle, 
-									a Welsh software engineer. It became heavily popularized in late 2021, and was eventually sold to the New York Times.
+									Wordle Clone is a reproduction of the popular word game website,{" "}
+                  <text2 className="tooltip">
+                    <u>Wordle</u>
+										<span class="tooltiptext">
+											Wordle is a web-based word game where the user's goal is to guess a daily word in as few guesses as possible. 
+											It was created by Josh Wardle, a Welsh software engineer. The game was published in late 2021,
+											and quickly became very popular, eventually being sold to the New York Times for a whopping 7-figure sum.
+											Many spin-off games have since been created, and become popular in their own right.
+										</span>
+                  </text2>.
 									{"\n\n"}
 									I created Wordle Clone to improve my front-end web development skills. 
 									It was built using <strong>JavaScript</strong>, <strong>ReactJS</strong>, <strong>CSS</strong>, and <strong>HTML</strong>.
