@@ -31,20 +31,20 @@ export const projectsList = [
         link:"/projects/ThisWebsite"
     },
     {
-        title:"NuMom",
-        desc:"A mobile application aimed to provide access to resources and information to low-income woman regarding sexual health, general health care, and proper infant care.",
-        image:NuMom,
-        techIcons:[JavaScriptLogo, ReactLogo, FirebaseLogo, GitLogo],
-        tech:["JavaScript", "React Native", "Firebase", "Git"],
-        link:"/projects/NuMom"
-    },
-    {
         title:"VINYLE",
         desc:"A web application, similar to the popular word-guessing game, 'Wordle', where the player is instructed to guess an album from a cropped portion of its cover art.",
         image:VINYLE,
         techIcons:[JavaScriptLogo, ReactLogo, NodeLogo, MySQLLogo, CSSLogo, HTMLLogo],
         tech:["JavaScript", "ReactJS", "NodeJS", "MySQL", "CSS", "HTML"],
         link:"/projects/VINYLE"
+    },
+    {
+        title:"NuMom",
+        desc:"A mobile application aimed to provide access to resources and information to low-income woman regarding sexual health, general health care, and proper infant care.",
+        image:NuMom,
+        techIcons:[JavaScriptLogo, ReactLogo, FirebaseLogo, GitLogo],
+        tech:["JavaScript", "React Native", "Firebase", "Git"],
+        link:"/projects/NuMom"
     },
     {
         title:"Aliens Took My Friend",

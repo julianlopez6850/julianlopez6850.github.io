@@ -4,17 +4,19 @@ import Navbar from '../components/Navbar.js';
 import { useLocation } from 'react-router-dom';
 
 import Github from '../assets/socials_logos/Github.svg';
+import Vinyle from '../assets/vinyle.ico'
 
 function VINYLE() {
   const location = useLocation();
   const { props } = location.state;
 
+  const PlayVinyleLink = "https://playvinyle.com";
   const ClientGithubLink = "https://github.com/julianlopez6850/VINYLE";
   const ServerGithubLink = "https://github.com/julianlopez6850/VINYLE-backend";
   const EditAlbumsGithubLink = "https://github.com/julianlopez6850/add-remove-albums";
 
-  const addLinks = [ClientGithubLink, ServerGithubLink, EditAlbumsGithubLink];
-  const addLinkIcons = [["Client Github Repo", Github], ["Server Github Repo", Github], ["Albums Editor Github Repo", Github]];
+  const addLinks = [PlayVinyleLink, ClientGithubLink, ServerGithubLink, EditAlbumsGithubLink];
+  const addLinkIcons = [["Check out VINYLE here!", Vinyle], ["Client Github Repo", Github], ["Server Github Repo", Github], ["Albums Editor Github Repo", Github]];
 
   return (
     <>
@@ -37,16 +39,26 @@ function VINYLE() {
             </span>
           </text2>.
           In VINYLE, instead of guessing a daily word, you can test your music knowledge by guessing albums based on cropped portions of their cover art.
-          You may play the 'classic' daily version of the game, or you may play as many times as you would like on infinite mode.
+          You may play the 'classic' daily version of the game, or you may play as many times as you wish on infinite mode.
           {"\n\n"}
           The VINYLE web app client was built using <strong>JavaScript</strong>, <strong>ReactJS</strong>, <strong>CSS</strong>, and <strong>HTML</strong>.
           I also developed a REST API server using <strong>NodeJS</strong>, <strong>ExpressJS</strong>, and <strong>MySQL</strong>. 
-          This API allows the client to request the cropped portions of album art and other album information;
-          register and authenticate users; and request the current player's game history and statistics.
+          This API handles registering and authenticating users; making requests for album data, as well as requests for user's history, statistics, and settings.
           {"\n\n"}
-          Additionally, I created a small web app to make adding and removing albums from the SQL database a simple and more efficient process.
+          I also created some smaller web apps to aid myself during the development process. 
+          One of these apps made adding and removing albums from the SQL database simpler and more efficient, 
+          while another displayed all of the album art images and their cropped versions on one page to easily identify any problems.
           {"\n\n"}
-          VINYLE is currently <b>under development</b>.
+          The VINYLE client is hosted on <strong>Firebase</strong> and the server is deployed to <strong>Heroku</strong>.
+          {"\n\n"}
+          You can visit and play VINYLE right now at {" "}
+          <a
+            href={PlayVinyleLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+              <strong><u>playvinyle.com</u></strong>
+          </a>!
           {"\n\n"}
         </text1>
         }
