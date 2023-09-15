@@ -20,15 +20,7 @@ PERFORMANCE OF THIS SOFTWARE.
 ***************************************************************************** */
 
 /**
- * A better abstraction over CSS.
- *
- * @copyright Oleg Isonen (Slobodskoi) / Isonen 2014-present
- * @website https://github.com/cssinjs/jss
- * @license MIT
- */
-
-/**
- * React Router DOM v6.2.1
+ * @remix-run/router v1.9.0
  *
  * Copyright (c) Remix Software Inc.
  *
@@ -39,7 +31,26 @@ PERFORMANCE OF THIS SOFTWARE.
  */
 
 /**
- * React Router v6.2.1
+ * A better abstraction over CSS.
+ *
+ * @copyright Oleg Isonen (Slobodskoi) / Isonen 2014-present
+ * @website https://github.com/cssinjs/jss
+ * @license MIT
+ */
+
+/**
+ * React Router DOM v6.16.0
+ *
+ * Copyright (c) Remix Software Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.md file in the root directory of this source tree.
+ *
+ * @license MIT
+ */
+
+/**
+ * React Router v6.16.0
  *
  * Copyright (c) Remix Software Inc.
  *
