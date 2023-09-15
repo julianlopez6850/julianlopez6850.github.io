@@ -12,6 +12,7 @@ import InstaSlot from './pages/InstaSlot.js';
 import GameCheck from './pages/GameCheck';
 import WordleClone from './pages/WordleClone';
 import VINYLE from './pages/VINYLE';
+import CriticalDatesSchedule from './pages/CriticalDatesSchedule';
 
 import UnderConstruction from './pages/UnderConstruction';
 import PageNotFound from './pages/PageNotFound';
@@ -21,7 +22,6 @@ import { HashRouter as Router, Route, Routes } from "react-router-dom";
 function App() {
 	return (
 		<div className="App">
-			
 			<Router>
 				<Routes>
 					<Route exact path="/" element={Homepage} />
@@ -32,6 +32,7 @@ function App() {
 					<Route exact path="/projects/GameCheck" element={<GameCheck/>} />
 					<Route exact path="/projects/WordleClone" element={<WordleClone/>} />
 					<Route exact path="/projects/VINYLE" element={<VINYLE/>} />
+					<Route exact path="/projects/CriticalDatesSchedule" element={<CriticalDatesSchedule/>} />
 					<Route exact path="/*" element={<PageNotFound/>} />
 				</Routes>
 

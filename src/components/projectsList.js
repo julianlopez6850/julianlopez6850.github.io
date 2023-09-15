@@ -20,6 +20,7 @@ import InstaSlot from "../assets/project_screenshots/InstaSlot_Screenshot.png";
 import GameCheck from "../assets/project_screenshots/GameCheck_Screenshot.png";
 import WordleClone from "../assets/project_screenshots/WordleClone_Screenshot.png";
 import VINYLE from "../assets/project_screenshots/VINYLE_Screenshot.png";
+import CriticalDatesSchedule from "../assets/project_screenshots/CriticalDatesSchedule_Screenshot.png";
 
 export const projectsList = [
     {
@@ -45,6 +46,14 @@ export const projectsList = [
         techIcons:[JavaScriptLogo, ReactLogo, FirebaseLogo, GitLogo],
         tech:["JavaScript", "React Native", "Firebase", "Git"],
         link:"/projects/NuMom"
+    },
+    {
+        title:"Critical Dates Schedule",
+        desc:"A web app used to store & manage real estate files; list & filter important deadlines; and send staff daily email reminders, built for Gary Silberman, P.A., single-handedly replacing the need for two outdated software previously used by the office.",
+        image:CriticalDatesSchedule,
+        techIcons:[JavaScriptLogo, ReactLogo, NodeLogo, MySQLLogo, CSSLogo, HTMLLogo],
+        tech:["JavaScript", "ReactJS", "NodeJS", "MySQL", "CSS", "HTML"],
+        link:"/projects/CriticalDatesSchedule"
     },
     {
         title:"Aliens Took My Friend",
