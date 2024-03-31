@@ -10,6 +10,8 @@
 
 # production
 /build
+/src/assets
+/public/Julian_Lopez_Resume.pdf
 
 # misc
 .DS_Store

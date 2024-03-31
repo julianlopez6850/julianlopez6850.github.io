@@ -1,24 +1,24 @@
 :root {
-  --primary: #a1a1a1; /*a1a1a1*/
-  --primary-dark: #676767;
-  --primary-hover: #4194e1;
-  --primary-hover-darker: #084e8f;
-  --primary-hover-darkest:#04284b;
-  --hover-background: #00000055;
-  --scrolled-background: #07001CE0;
-  --background-color:#06001C;
+    --primary: #a1a1a1; /*a1a1a1*/
+    --primary-dark: #676767;
+    --primary-hover: #4194e1;
+    --primary-hover-darker: #084e8f;
+    --primary-hover-darkest:#04284b;
+    --hover-background: #00000055;
+    --scrolled-background: #07001CE0;
+    --background-color:#06001C;
 }
 
 .App {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  font-family: Arial, Helvetica, sans-serif;
-  
-  background-color: var(--background-color);
-  min-height: 100vh;
-  display: flow-root;
-  color: white;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    background-color: var(--background-color);
+    min-height: 100vh;
+    display: flow-root;
+    color: white;
 }
 

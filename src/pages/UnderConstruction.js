@@ -14,7 +14,7 @@ function PageUnderConstruction() {
     return (
         <>
             <Navbar />
-			<ScrollToTop/>
+            <ScrollToTop/>
             <div className="underConstruction">
                 <div className="content">
                     <div className="image" id="UnderConstructionSign" >

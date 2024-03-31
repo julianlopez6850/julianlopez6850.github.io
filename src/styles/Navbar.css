@@ -1,5 +1,3 @@
-@import url("RotateLogo.css");
-
 .navbar {
     position: fixed;
     min-width: 100%;
@@ -13,7 +11,7 @@
     background-color: var(--scrolled-background);
 }
 
-.navbar .content{
+.navbar .content {
     width: 100%;
     max-width: 1400px;
     display: flex;
@@ -23,7 +21,7 @@
     color: var(--primary);
 }
 
-.navbar .content:hover{
+.navbar .content:hover {
     width: 100%;
     max-width: 1400px;
     display: flex;
@@ -56,13 +54,24 @@
     width: 55px;
 }
 
-.navbar .leftSide:hover{
+.navbar .leftSide:hover {
     filter: var(--primary-hover);
     display: flex;
     background: var(--hover-background);
-    transition: 0.0s;
     color: var(--primary-hover);
     cursor: pointer;
+}
+
+.navbar .leftSide .rotate_img {
+    position: flex;
+    padding: 10px;
+    width: 35px;
+    height: 35px;
+    transition: transform 500ms ease-in-out;
+}
+
+.navbar .leftSide:hover .rotate_img {
+    transform: rotate(360deg);
 }
 
 .navbar button {

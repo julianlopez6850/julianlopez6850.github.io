@@ -26,12 +26,12 @@ function About() {
                 </div>
                 <div className = "right">
                     <text1 style={{ whiteSpace: "pre-line" }}>
-                    I am a recent graduate of Florida International University (August 2022) with a 
-                    {" "}<strong>Bachelor of Science in Computer Science</strong> and a <strong>Minor in Mathematical Sciences</strong>.
+                    I am {getAge("07/23/2001")} years old, and I am a software developer in Miami, Florida. 
+                    I have a strong passion for creating innovative solutions to the problems that surround us all, and
+                    I am thrilled to be able to build applications and websites that increase productivity and help people grow their businesses.
                     {"\n\n"}
-                    I am {getAge("07/23/2001")} years old, and I am deeply interested in software design and development.
-                    I have a passion for creating innovative solutions to the problems that surround us all,
-                    and I am eager to build software for people to use and enjoy in their daily lives.
+                    I am a graduate of Florida International University (August 2022), where I received my
+                    {" "}<strong>Bachelor of Science in Computer Science</strong> and a <strong>Minor in Mathematical Sciences</strong>.
                     {"\n\n"}
                     When I am not furthering my skills in software development, I enjoy playing
                     video games, weightlifting, investing, and spending time with friends & family.

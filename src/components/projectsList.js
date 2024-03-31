@@ -20,16 +20,18 @@ import InstaSlot from "../assets/project_screenshots/InstaSlot_Screenshot.png";
 import GameCheck from "../assets/project_screenshots/GameCheck_Screenshot.png";
 import WordleClone from "../assets/project_screenshots/WordleClone_Screenshot.png";
 import VINYLE from "../assets/project_screenshots/VINYLE_Screenshot.png";
-import CriticalDatesSchedule from "../assets/project_screenshots/CriticalDatesSchedule_Screenshot.png";
+import CriticalDatesTimeline from "../assets/project_screenshots/CriticalDatesTimeline_Screenshot.png";
+import SilbermanLaw from "../assets/project_screenshots/silberman-law.com_Screenshot.png"
+import CapitaLandscaping from "../assets/project_screenshots/CapitaLandscaping_Screenshot.png"
 
 export const projectsList = [
     {
-        title:"This Website",
-        desc:"A perpetually updated portfolio website created to show off who I am, and the projects that I have worked on to strengthen my knowledge and skills in software development.",
-        image:ThisWebsite,
-        techIcons:[JavaScriptLogo, ReactLogo, CSSLogo, HTMLLogo],
-        tech:["JavaScript", "ReactJS", "CSS", "HTML"],
-        link:"/projects/ThisWebsite"
+        title:"Critical Dates Schedule",
+        desc:"A web app used to store & manage real estate files; list & filter important deadlines; and send staff daily email reminders, built for Gary Silberman, P.A., single-handedly replacing the need for two outdated software previously used by the office.",
+        image:CriticalDatesTimeline,
+        techIcons:[JavaScriptLogo, ReactLogo, NodeLogo, MySQLLogo, CSSLogo, HTMLLogo],
+        tech:["JavaScript", "ReactJS", "NodeJS", "MySQL", "CSS", "HTML"],
+        link:"/projects/CriticalDatesSchedule"
     },
     {
         title:"VINYLE",
@@ -40,20 +42,36 @@ export const projectsList = [
         link:"/projects/VINYLE"
     },
     {
+        title:"capitalandscaping.com",
+        desc:"A website built for Capita Nursery & Landscaping, a plant nursery based in Miami, FL.",
+        image:CapitaLandscaping,
+        techIcons:[JavaScriptLogo, ReactLogo, CSSLogo, HTMLLogo],
+        tech:["JavaScript", "ReactJS", "CSS", "HTML"],
+        link:"/projects/capitalandscaping.com"
+    },
+    {
+        title:"silberman-law.com",
+        desc:"A website built for Gary Silberman, P.A., a lawfirm based in Coconut Grove, FL that specializes primarily in real estate law.",
+        image:SilbermanLaw,
+        techIcons:[JavaScriptLogo, ReactLogo, CSSLogo, HTMLLogo],
+        tech:["JavaScript", "ReactJS", "CSS", "HTML"],
+        link:"/projects/silberman-law.com"
+    },
+    {
+        title:"This Website",
+        desc:"A perpetually updated portfolio website created to show off who I am, and the projects that I have worked on to strengthen my knowledge and skills in software development.",
+        image:ThisWebsite,
+        techIcons:[JavaScriptLogo, ReactLogo, CSSLogo, HTMLLogo],
+        tech:["JavaScript", "ReactJS", "CSS", "HTML"],
+        link:"/projects/ThisWebsite"
+    },
+    {
         title:"NuMom",
         desc:"A mobile application aimed to provide access to resources and information to low-income woman regarding sexual health, general health care, and proper infant care.",
         image:NuMom,
         techIcons:[JavaScriptLogo, ReactLogo, FirebaseLogo, GitLogo],
         tech:["JavaScript", "React Native", "Firebase", "Git"],
         link:"/projects/NuMom"
-    },
-    {
-        title:"Critical Dates Schedule",
-        desc:"A web app used to store & manage real estate files; list & filter important deadlines; and send staff daily email reminders, built for Gary Silberman, P.A., single-handedly replacing the need for two outdated software previously used by the office.",
-        image:CriticalDatesSchedule,
-        techIcons:[JavaScriptLogo, ReactLogo, NodeLogo, MySQLLogo, CSSLogo, HTMLLogo],
-        tech:["JavaScript", "ReactJS", "NodeJS", "MySQL", "CSS", "HTML"],
-        link:"/projects/CriticalDatesSchedule"
     },
     {
         title:"Aliens Took My Friend",

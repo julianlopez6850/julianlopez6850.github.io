@@ -14,7 +14,7 @@ function PageNotFound() {
     return (
         <>
             <Navbar />
-			<ScrollToTop/>
+            <ScrollToTop/>
             <div className="underConstruction" id="home">
                 <div className="content">
                     {/*
